@@ -1,0 +1,2868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Front-End Tutorial.</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Front-End Tutorial.</a>
+
+        <div class="social-media">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="https://www.w3schools.com/js/default.asp">Learn More About JavaScript</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <h3 class="active">JS Intoduction</h3>
+            <h3>JS Output</h3>
+            <h3>JS Statements</h3>
+            <h3>JS Syntax</h3>
+            <h3>JS Comments</h3>
+            <h3>JS Variables</h3>
+            <h3>JS Let</h3>
+            <h3>JS Const</h3>
+            <h3>JS Operators</h3>
+            <h3>JS Arithmetic</h3>
+            <h3>JS Assignment</h3>
+            <h3>JS Data Types</h3>
+            <h3>JS Functions</h3>
+            <h3>JS Objects</h3>
+            <h3>JS Objects Properties</h3>
+            <h3>JS Objects Methods</h3>
+            <h3>JS Objects Display</h3>
+            <h3>JS Constructors</h3>
+            <h3>JS Events</h3>
+            <h3>JS Strings</h3>
+            <h3>JS Strings Methods</h3>
+            <h3>JS Strings Search</h3>
+            <h3>JS Strings Templates</h3>
+            <h3>JS Numbers</h3>
+            
+        </div>
+        <div class="tab-content">
+            <!--JS INTRODUCTION-->
+            <div class="active">
+                <h4>JavaScript Introduction</h4>
+                <p>
+                    One of many JavaScript HTML methods is getElementById(). <br>
+                    The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript": <br>
+                    Example <br>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript"; <br>
+                    JavaScript accepts both double and single quotes: <br>
+                    Example <br>
+                    document.getElementById('demo').innerHTML = 'Hello JavaScript';
+                </p>
+                <h4>JavaScript Can Change HTML Styles (CSS)</h4>
+                <p>
+                    Changing the style of an HTML element, is a variant of changing an HTML attribute: <br>
+                    Example <br>
+                    document.getElementById("demo").style.fontSize = "35px";
+                </p>
+                <h4>JavaScript Can Hide HTML Elements</h4>
+                <p>
+                    Hiding HTML elements can be done by changing the display style: <br>
+                    Example <br>
+                    document.getElementById("demo").style.display = "none";
+                </p>
+                <h4>JavaScript Can Show HTML Elements</h4>
+                <p>
+                    Showing hidden HTML elements can also be done by changing the display style: <br>
+                    Example <br>
+                    document.getElementById("demo").style.display = "block";
+                </p>
+            </div>
+            <!--OUTPUT-->
+            <div>
+                <h4>JavaScript Output</h4>
+                <h4>JavaScript Output</h4>
+                <p>
+                    JavaScript can "display" data in different ways: <br>
+                    - Writing into an HTML element, using innerHTML. <br>
+                    - Writing into the HTML output using document.write(). <br>
+                    - Writing into an alert box, using window.alert(). <br>
+                    - Writing into the browser console, using console.log(). <br>
+                </p>
+                <h4>Using innerHTML</h4>
+                <p>
+                    To access an HTML element, JavaScript can use the document.getElementById(id) method. <br>
+                    The id attribute defines the HTML element. The innerHTML property defines the HTML content
+                </p>
+                <h4>Using document.write()</h4>
+                <p>
+                    For testing purposes, it is convenient to use document.write() <br>
+                    Using document.write() after an HTML document is loaded, will delete all existing HTML <br>
+                    The document.write() method should only be used for testing.
+                </p>
+                <h4>Using window.alert()</h4>
+                <p>
+                    You can use an alert box to display data: <br>
+                    You can skip the window keyword. <br>
+                    In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional
+                </p>
+                <h4>Using console.log()</h4>
+                <p>
+                    For debugging purposes, you can call the console.log() method in the browser to display data.
+                </p>
+                <h4>JavaScript Print</h4>
+                <p>
+                    JavaScript does not have any print object or print methods. <br>
+                    You cannot access output devices from JavaScript. <br>
+                    The only exception is that you can call the window.print() method in the browser to print the content of the current window.
+                </p>
+            </div>
+            <!--STATEMENT-->
+            <div>
+                <h4>JavaScript Statements</h4>
+                <p>
+                    JavaScript statements are composed of: <br>
+                    Values, Operators, Expressions, Keywords, and Comments. <br>
+                    This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo": <br>
+                    Example <br>
+                    document.getElementById("demo").innerHTML = "Hello Dolly."; <br>
+                    Most JavaScript programs contain many JavaScript statements. <br>
+                    The statements are executed, one by one, in the same order as they are written. <br>
+                    JavaScript programs (and JavaScript statements) are often called JavaScript code
+                </p>
+                <h4>Semicolons ;</h4>
+                <p>
+                    Semicolons separate JavaScript statements. <br>
+                    Add a semicolon at the end of each executable statement: <br>
+                    Examples <br>
+                    let a, b, c;  // Declare 3 variables <br>
+                    a = 5;        // Assign the value 5 to a <br>
+                    b = 6;        // Assign the value 6 to b <br>
+                    c = a + b;    // Assign the sum of a and b to c <br>
+                    When separated by semicolons, multiple statements on one line are allowed: <br>
+                    a = 5; b = 6; c = a + b; <br>
+                    On the web, you might see examples without semicolons. <br>
+                    Ending statements with semicolon is not required, but highly recommended.
+                </p>
+                <h4>JavaScript White Space</h4>
+                <p>
+                    JavaScript ignores multiple spaces. You can add white space to your script to make it more readable. <br>
+                    The following lines are equivalent: <br>
+                    let person = "Hege"; <br>
+                    let person="Hege"; <br>
+                    A good practice is to put spaces around operators ( = + - * / ): <br>
+                    let x = y + z;
+                </p>
+                <h4>JavaScript Line Length and Line Breaks</h4>
+                <p>
+                    For best readability, programmers often like to avoid code lines longer than 80 characters. <br>
+                    If a JavaScript statement does not fit on one line, the best place to break it is after an operator: <br>
+                    Example <br>
+                    document.getElementById("demo").innerHTML = <br>
+                    "Hello Dolly!";
+                </p>
+                <h4>JavaScript Code Blocks</h4>
+                <p>
+                    JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+                    The purpose of code blocks is to define statements to be executed together.
+                    One place you will find statements grouped together in blocks, is in JavaScript functions: <br>
+                    Example <br>
+                    function myFunction() { <br>
+                    document.getElementById("demo1").innerHTML = "Hello Dolly!"; <br>
+                    document.getElementById("demo2").innerHTML = "How are you?"; <br>
+                    }
+                </p>
+            </div>
+            <!--SYNTAX-->
+            <div>
+                <h4>JavaScript Syntax</h4>
+                <p>
+                    JavaScript syntax is the set of rules, how JavaScript programs are constructed: <br>
+                    // How to create variables: br
+                    var x; <br>
+                    let y; <br>
+                    // How to use variables: br
+                    x = 5; <br>
+                    y = 6; <br>
+                    let z = x + y;
+                </p>
+                <h4>JavaScript Values</h4>
+                <p>
+                    The JavaScript syntax defines two types of values: <br>
+                    - Fixed values <br>
+                    - Variable values <br>
+                    Fixed values are called Literals. <br>
+                    Variable values are called Variables. <br>
+                </p>
+                <h4>JavaScript Literals</h4>
+                <p>
+                    The two most important syntax rules for fixed values are: <br>
+                    1. Numbers are written with or without decimals: <br>
+                    - 10.50 <br>
+                    - 1001 <br>
+                    2. Strings are text, written within double or single quotes: <br>
+                    - "John Doe" <br>
+                    - 'John Doe' <br>
+                </p>
+                <h4>JavaScript Variables</h4>
+                <p>
+                    In a programming language, variables are used to store data values. <br>
+                    JavaScript uses the keywords var, let and const to declare variables. <br>
+                    An equal sign is used to assign values to variables. <br>
+                    In this example, x is defined as a variable. Then, x is assigned (given) the value 6: <br>
+                    let x; <br>
+                    x = 6;
+                </p>
+                <h4>JavaScript Operators</h4>
+                <p>
+                    avaScript uses arithmetic operators ( + - * / ) to compute values: <br>
+                    (5 + 6) * 10 <br>
+                    JavaScript uses an assignment operator ( = ) to assign values to variables: <br>                
+                    let x, y; <br>
+                    x = 5; <br>
+                    y = 6; 
+                </p>
+                <h4>JavaScript Expressions</h4>
+                <p>
+                    An expression is a combination of values, variables, and operators, which computes to a value. <br>
+                    The computation is called an evaluation. <br>
+                    For example, 5 * 10 evaluates to 50: <br>
+                    5 * 10 <br>
+                    Expressions can also contain variable values: <br>
+                    x * 10 <br>
+                    The values can be of various types, such as numbers and strings. <br>
+                    For example, "John" + " " + "Doe", evaluates to "John Doe": <br>
+                    "John" + " " + "Doe"
+                </p>
+                <h4>JavaScript Keywords</h4>
+                <p>
+                    JavaScript keywords are used to identify actions to be performed. <br>
+                    The let keyword tells the browser to create variables: <br>
+                    let x, y; <br>
+                    x = 5 + 6; <br>
+                    y = x * 10; <br>
+                    The var keyword also tells the browser to create variables: <br>
+                    var x, y; <br>
+                    x = 5 + 6; <br>
+                    y = x * 10;
+                </p>
+                <h4>JavaScript Comments</h4>
+                <p>
+                    Not all JavaScript statements are "executed". <br>
+                    Code after double slashes // or between /* and */ is treated as a comment. <br>
+                    Comments are ignored, and will not be executed: <br>
+                    let x = 5;   // I will be executed <br>
+                    // x = 6;   I will NOT be executed
+                </p>
+                <h4>JavaScript Identifiers / Names</h4>
+                <p>
+                    Identifiers are JavaScript names. <br>
+                    Identifiers are used to name variables and keywords, and functions. <br>
+                    The rules for legal names are the same in most programming languages. <br>
+                    A JavaScript name must begin with: <br>
+                    - A letter (A-Z or a-z) <br>
+                    - A dollar sign ($) <br>
+                    - Or an underscore (_) <br>
+                    Subsequent characters may be letters, digits, underscores, or dollar signs.
+                </p>
+                <h4>JavaScript is Case Sensitive</h4>
+                <p>
+                    All JavaScript identifiers are case sensitive. <br>
+                    The variables lastName and lastname, are two different variables: <br>                    
+                    let lastname, lastName; <br>
+                    lastName = "Doe"; <br>
+                    lastname = "Peterson"; 
+                </p>
+                <h4>JavaScript and Camel Case</h4>
+                <p>
+                    Historically, programmers have used different ways of joining multiple words into one variable name: <br>
+                    Hyphens: <br>
+                    first-name, last-name, master-card, inter-city. <br>
+                    Hyphens are not allowed in JavaScript. They are reserved for subtractions. <br>
+                    Underscore: <br>
+                    first_name, last_name, master_card, inter_city. <br>
+                    Upper Camel Case (Pascal Case): <br>                    
+                    FirstName, LastName, MasterCard, InterCity. <br>
+                    Lower Camel Case: <br>
+                    JavaScript programmers tend to use camel case that starts with a lowercase letter: <br>
+                    firstName, lastName, masterCard, interCity.
+                </p>
+                <h4>JavaScript Character Set</h4>
+                <p>
+                    JavaScript uses the Unicode character set. <br>
+                    Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+                </p>
+            </div>
+            <!--COMMENTS-->
+            <div>
+                <h4>JavaScript Comments</h4>
+                <p>
+                    JavaScript comments can be used to explain JavaScript code, and to make it more readable. <br>
+                    JavaScript comments can also be used to prevent execution, when testing alternative code.
+                </p>
+                <h4>Single Line Comments</h4>
+                <p>
+                    Single line comments start with //. <br>
+                    Any text between // and the end of the line will be ignored by JavaScript (will not be executed). <br>
+                    This example uses a single-line comment before each code line: <br>
+                    Example <br>
+                    // Change heading:
+                    <br>
+                    document.getElementById("myH").innerHTML = "My First Page"; <br>
+                    // Change paragraph:
+                    <br>
+                    document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+                    This example uses a single line comment at the end of each line to explain the code: <br>
+                    Example <br>
+                    let x = 5;      // Declare x, give it the value of 5 <br>
+                    let y = x + 2;  // Declare y, give it the value of x + 2
+                </p>
+                <h4>Multi-line Comments</h4>
+                <p>
+                    Multi-line comments start with /* and end with */. <br>
+                    Any text between /* and */ will be ignored by JavaScript. <br>
+                    This example uses a multi-line comment (a comment block) to explain the code: <br>
+                    Example <br>
+                    /* <br>
+                    The code below will change <br>
+                    the heading with id = "myH" <br>
+                    and the paragraph with id = "myP" <br>
+                    in my web page: <br>
+                    */ <br>
+                    document.getElementById("myH").innerHTML = "My First Page"; <br>
+                    document.getElementById("myP").innerHTML = "My first paragraph."; 
+                </p>
+                <h4>Using Comments to Prevent Execution</h4>
+                <p>
+                    Using comments to prevent execution of code is suitable for code testing. <br>
+                    Adding // in front of a code line changes the code lines from an executable line to a comment. <br>
+                    This example uses // to prevent execution of one of the code lines: <br>
+                    Example <br>
+                    //document.getElementById("myH").innerHTML = "My First Page";
+                    <br>
+                    document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+                    This example uses a comment block to prevent execution of multiple lines: <br>
+                    Example <br>
+                    /* <br>
+                    document.getElementById("myH").innerHTML = "My First Page"; <br>
+                    document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+                    */
+                </p>
+            </div>
+            <!--VARIABLES-->
+            <div>
+                <h4>JavaScript Variables</h4>
+                <p>
+                    Variables are Containers for Storing Data <br>
+                    JavaScript Variables can be declared in 4 ways: <br>
+                    - Automatically <br>
+                    - Using var <br>
+                    - Using let <br>
+                    - Using const <br>
+                    In this first example, x, y, and z are undeclared variables. <br>
+                    They are automatically declared when first used: <br>
+                    Example <br>
+                    x = 5; <br>
+                    y = 6; <br>
+                    z = x + y; <br>
+                    Note <br>
+                    It is considered good programming practice to always declare variables before use. <br>
+                    From the examples you can guess: <br>
+                    - x stores the value 5 <br>
+                    - y stores the value 6 <br>
+                    - z stores the value 11 <br>
+                    Example using var <br>
+                    var x = 5; <br>
+                    var y = 6; <br>
+                    var z = x + y; <br>
+                    Note <br>
+                    The var keyword was used in all JavaScript code from 1995 to 2015. <br>
+                    The let and const keywords were added to JavaScript in 2015. <br>
+                    The var keyword should only be used in code written for older browsers. <br>
+                    Example using let <br>
+                    let x = 5; <br>
+                    let y = 6; <br>
+                    let z = x + y; <br>
+                    Example using const <br>
+                    const x = 5; <br>
+                    const y = 6; <br>
+                    const z = x + y; <br>
+                    Mixed Example <br>
+                    const price1 = 5; <br>
+                    const price2 = 6; <br>
+                    let total = price1 + price2; <br>
+                    The two variables price1 and price2 are declared with the const keyword. <br>
+                    These are constant values and cannot be changed. <br>
+                    The variable total is declared with the let keyword. <br>
+                    The value total can be changed. <br>
+                    When to Use var, let, or const? <br>
+                    1. Always declare variables <br>
+                    2. Always use const if the value should not be changed <br>
+                    3. Always use const if the type should not be changed (Arrays and Objects) <br>
+                    4. Only use let if you can't use const <br>
+                    5. Only use var if you MUST support old browsers. <br>
+                    Just Like Algebra <br>
+                    Just like in algebra, variables hold values: <br>
+                    let x = 5; <br>
+                    let y = 6; <br>
+                    Just like in algebra, variables are used in expressions: <br>
+                    let z = x + y; <br>
+                    From the example above, you can guess that the total is calculated to be 11. <br>
+                    Note <br>
+                    Variables are containers for storing values.                   
+                </p>
+                <h4>JavaScript Identifiers</h4>
+                <p>
+                    All JavaScript variables must be identified with unique names. <br>
+                    These unique names are called identifiers. <br>
+                    Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume). <br>
+                    The general rules for constructing names for variables (unique identifiers) are: <br>
+                    - Names can contain letters, digits, underscores, and dollar signs. <br>
+                    - Names must begin with a letter. <br>
+                    - Names can also begin with $ and _ (but we will not use it in this tutorial). <br>
+                    - Names are case sensitive (y and Y are different variables). <br>
+                    - Reserved words (like JavaScript keywords) cannot be used as names. <br>
+                    Note <br>
+                    JavaScript identifiers are case-sensitive.
+                </p>
+                <h4>The Assignment Operator</h4>
+                <p>
+                    In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator. <br>
+                    This is different from algebra. The following does not make sense in algebra: <br>
+                    x = x + 5 <br>
+                    In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x. <br>
+                    (It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.) <br>
+                    Note <br>
+                    The "equal to" operator is written like == in JavaScript.
+                </p>
+                <h4>JavaScript Data Types</h4>
+                <p>
+                    JavaScript variables can hold numbers like 100 and text values like "John Doe". <br>
+                    In programming, text values are called text strings. <br>
+                    JavaScript can handle many types of data, but for now, just think of numbers and strings. <br>
+                    Strings are written inside double or single quotes. Numbers are written without quotes. <br>
+                    If you put a number in quotes, it will be treated as a text string. <br>
+                    Example <br>
+                    const pi = 3.14; <br>
+                    let person = "John Doe"; <br>
+                    let answer = 'Yes I am!';
+                </p>
+                <h4>Declaring a JavaScript Variable</h4>
+                <p>
+                    Creating a variable in JavaScript is called "declaring" a variable. <br>
+                    You declare a JavaScript variable with the var or the let keyword: <br>
+                    var carName; <br>
+                    or: <br>
+                    let carName; <br>
+                    After the declaration, the variable has no value (technically it is undefined). <br>
+                    To assign a value to the variable, use the equal sign: <br>
+                    carName = "Volvo"; <br>
+                    You can also assign a value to the variable when you declare it: <br>
+                    let carName = "Volvo"; <br>
+                    In the example below, we create a variable called carName and assign the value "Volvo" to it. <br>
+                    Then we "output" the value inside an HTML paragraph with id="demo": <br>
+                    Example <br>
+                    &lt;p id="demo"&gt;&lt;/p&gt; <br>
+                    &lt;script&gt; <br>
+                    let carName = "Volvo"; <br>
+                    document.getElementById("demo").innerHTML = carName; <br>
+                    &lt;/script&gt; <br>
+                    Note <br>
+                    It's a good programming practice to declare all variables at the beginning of a script.
+                </p>
+                <h4>One Statement, Many Variables</h4>
+                <p>
+                    You can declare many variables in one statement. <br>
+                    Start the statement with let and separate the variables by comma: <br>
+                    Example <br>
+                    let person = "John Doe", carName = "Volvo", price = 200; <br>
+                    A declaration can span multiple lines: <br>
+                    Example <br>
+                    let person = "John Doe", <br>
+                    carName = "Volvo", <br> 
+                    price = 200;
+                </p>
+                <h4>Value = undefined</h4>
+                <p>
+                    In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input. <br>
+                    A variable declared without a value will have the value undefined. <br>
+                    The variable carName will have the value undefined after the execution of this statement: <br>
+                    Example <br>
+                    let carName;
+                </p>
+                <h4>Re-Declaring JavaScript Variables</h4>
+                <p>
+                    If you re-declare a JavaScript variable declared with var, it will not lose its value. <br>
+                    The variable carName will still have the value "Volvo" after the execution of these statements: <br>
+                    Example <br>
+                    var carName = "Volvo"; <br>
+                    var carName; <br>
+                    Note <br>
+                    You cannot re-declare a variable declared with let or const. <br>
+                    This will not work: <br>
+                    let carName = "Volvo"; <br>
+                    let carName;
+                </p>
+                <h4>JavaScript Arithmetic</h4>
+                <p>
+                    As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +: <br>
+                    Example <br>
+                    let x = 5 + 2 + 3; <br>
+                    You can also add strings, but strings will be concatenated: <br>
+                    Example <br>
+                    let x = "John" + " " + "Doe"; <br>
+                    Also try this: <br>
+                    Example <br>
+                    let x = "5" + 2 + 3; <br>
+                    Note <br>
+                    If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated. <br>
+                    Now try this: <br>
+                    Example <br>
+                    let x = 2 + 3 + "5";
+                </p>
+                <h4>JavaScript Dollar Sign $</h4>
+                <p>
+                    Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names: <br>
+                    Example <br>
+                    let $ = "Hello World"; <br>
+                    let $$$ = 2; <br>
+                    let $myMoney = 5; <br>
+                    Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library. <br>
+                    In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery $("p"); means "select all p elements" <br>
+                </p>
+                <h4>JavaScript Underscore (_)</h4>
+                <p>
+                    Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names: <br>
+                    Example <br>
+                    let _lastName = "Johnson"; <br>
+                    let _x = 2; <br>
+                    let _100 = 5; <br>
+                    Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.
+                </p>
+            </div>
+            <!--LET-->
+            <div>
+                <h4>JavaScript Let</h4>
+                <p>
+                    The let keyword was introduced in ES6 (2015) <br>
+                    Variables declared with let have Block Scope <br>
+                    Variables declared with let must be Declared before use <br>
+                    Variables declared with let cannot be Redeclared in the same scope
+                </p>
+                <h4>Block Scope</h4>
+                <p>
+                    Before ES6 (2015), JavaScript did not have Block Scope. <br>
+                    JavaScript had Global Scope and Function Scope. <br>
+                    ES6 introduced the two new JavaScript keywords: let and const. <br>
+                    These two keywords provided Block Scope in JavaScript: <br>
+                    Example <br>
+                    Variables declared inside a { } block cannot be accessed from outside the block: <br>
+                    { <br>
+                    let x = 2; <br>
+                    } <br>
+                    // x can NOT be used here
+                </p>
+                <h4>Global Scope</h4>
+                <p>
+                    Variables declared with the var always have Global Scope. <br>
+                    Variables declared with the var keyword can NOT have block scope: <br>
+                    Example <br>
+                    Variables declared with varinside a { } block can be accessed from outside the block: <br>
+                    { <br>
+                    var x = 2; <br>
+                    } <br>
+                    // x CAN be used here
+                </p>
+                <h4>Cannot be Redeclared</h4>
+                <p>
+                    Variables defined with let can not be redeclared. <br>
+                    You can not accidentally redeclare a variable declared with let. <br>
+                    With let you can not do this: <br>
+                    let x = "John Doe"; <br>
+                    let x = 0; <br>
+                    Variables defined with var can be redeclared. <br>
+                    With var you can do this: <br>
+                    var x = "John Doe"; <br>
+                    var x = 0;
+                </p>
+                <h4>Redeclaring Variables</h4>
+                <p>
+                    Redeclaring a variable using the var keyword can impose problems. <br>
+                    Redeclaring a variable inside a block will also redeclare the variable outside the block: <br>
+                    Example <br>
+                    var x = 10; <br>
+                    // Here x is 10 
+                    <br>
+                    { <br>
+                    var x = 2; <br>
+                    // Here x is 2
+                    <br>
+                    } <br>
+                    // Here x is 2
+                    <br>
+                    Redeclaring a variable using the let keyword can solve this problem. <br>
+                    Redeclaring a variable inside a block will not redeclare the variable outside the block: <br>
+                    Example <br>
+                    let x = 10; <br>
+                    // Here x is 10
+                    <br>
+                    { <br>
+                    let x = 2; <br>
+                    // Here x is 2 
+                    <br>
+                    } <br>
+                    // Here x is 10
+                </p>
+                <h4>What is Good?</h4>
+                <p>
+                    let and const have block scope. <br>
+                    let and const can not be redeclared. <br>
+                    let and const must be declared before use. <br>
+                    let and const does not bind to this. <br>
+                    let and const are not hoisted.
+                </p>
+                <h4>What is Not Good?</h4>
+                <p>
+                    var does not have to be declared. <br>
+                    var is hoisted. <br>
+                    var binds to this.
+                </p>
+                <h4>Redeclaring</h4>
+                <p>
+                    Redeclaring a JavaScript variable with var is allowed anywhere in a program: <br>
+                    Example <br>
+                    var x = 2; <br>
+                    // Now x is 2
+                    <br>
+                    var x = 3; <br>
+                    // Now x is 3
+                    <br> 
+                    With let, redeclaring a variable in the same block is NOT allowed: <br>
+                    Example <br>
+                    var x = 2;   // Allowed <br> 
+                    let x = 3;   // Not allowed <br>
+                    { <br>
+                    let x = 2;   // Allowed <br>
+                    let x = 3;   // Not allowed <br>
+                    } <br>
+                    { <br>
+                    let x = 2;   // Allowed <br>
+                    var x = 3;   // Not allowed <br>
+                    } <br> 
+                    Redeclaring a variable with let, in another block, IS allowed: <br>
+                    Example <br>
+                    let x = 2;   // Allowed <br>
+                    { <br>
+                    let x = 3;   // Allowed <br>
+                    } <br>
+                    { <br>
+                    let x = 4;    // Allowed <br>
+                    }
+                </p>
+                <h4>Let Hoisting</h4>
+                <p>
+                    Variables defined with var are hoisted to the top and can be initialized at any time. <br>
+                    Meaning: You can use the variable before it is declared: <br>
+                    Example <br>
+                    This is OK: <br>
+                    carName = "Volvo"; <br>
+                    var carName; <br>
+                    If you want to learn more about hoisting, study the chapter JavaScript Hoisting. <br>
+                    Variables defined with let are also hoisted to the top of the block, but not initialized. <br>
+                    Meaning: Using a let variable before it is declared will result in a ReferenceError: <br>
+                    Example <br>
+                    carName = "Saab"; <br>
+                    let carName = "Volvo";
+                </p>
+            </div>
+            <!--CONST-->
+            <div>
+                <h4>JavaScript Const</h4>
+                <p>
+                    The const keyword was introduced in ES6 (2015) <br>
+                    Variables defined with const cannot be Redeclared <br>
+                    Variables defined with const cannot be Reassigned <br>
+                    Variables defined with const have Block Scope
+                </p>
+                <h4>Cannot be Reassigned</h4>
+                <p>
+                    A variable defined with the const keyword cannot be reassigned: <br>
+                    Example <br>
+                    const PI = 3.141592653589793; <br>
+                    PI = 3.14;      // This will give an error <br>
+                    PI = PI + 10;   // This will also give an error
+                </p>
+                <h4>Must be Assigned</h4>
+                <p>
+                    JavaScript const variables must be assigned a value when they are declared: <br>
+                    Correct <br>
+                    const PI = 3.14159265359; <br>
+                    Incorrect <br>
+                    const PI; <br>
+                    PI = 3.14159265359;
+                </p>
+                <h4>When to use JavaScript const?</h4>
+                <p>
+                    Always declare a variable with const when you know that the value should not be changed. <br>
+                    Use const when you declare: <br>
+                    - A new Array <br>
+                    - A new Object <br>
+                    - A new Function <br>
+                    - A new RegExp
+                </p>
+                <h4>Constant Objects and Arrays</h4>
+                <p>
+                    The keyword const is a little misleading. <br>
+                    It does not define a constant value. It defines a constant reference to a value. <br>
+                    - Because of this you can NOT: <br>
+                    - Reassign a constant value <br>
+                    - Reassign a constant array <br>
+                    - Reassign a constant object <br>
+                    But you CAN: <br>
+                    - Change the elements of constant array <br>
+                    - Change the properties of constant object
+                </p>
+                <h4>Constant Arrays</h4>
+                <p>
+                    You can change the elements of a constant array: <br>
+                    Example <br>
+                    // You can create a constant array:
+                    <br>
+                    const cars = ["Saab", "Volvo", "BMW"]; <br>
+                    // You can change an element:
+                    <br>
+                    cars[0] = "Toyota"; <br>
+                    // You can add an element: 
+                    <br>
+                    cars.push("Audi"); <br>
+                    But you can NOT reassign the array: <br>
+                    Example <br>
+                    const cars = ["Saab", "Volvo", "BMW"]; <br>
+                    cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+                </p>
+                <h4>Constant Objects</h4>
+                <p>
+                    You can change the properties of a constant object: <br>
+                    Example <br>
+                    // You can create a const object:
+                    <br>
+                    const car = {type:"Fiat", model:"500", color:"white"}; <br>
+                    // You can change a property:
+                    <br>
+                    car.color = "red"; <br>
+                    // You can add a property:
+                    <br>
+                    car.owner = "Johnson"; <br>
+                    But you can NOT reassign the object: <br>
+                    Example <br>
+                    const car = {type:"Fiat", model:"500", color:"white"}; <br>
+                    car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
+                </p>
+                <h4>What is Good?</h4>
+                <p>
+                    let and const have block scope. <br>
+                    let and const can not be redeclared. <br>
+                    let and const must be declared before use. <br>
+                    let and const does not bind to this. <br>
+                    let and const are not hoisted.
+                </p>
+                <h4>What is Not Good?</h4>
+                <p>
+                    var does not have to be declared. <br>
+                    var is hoisted. <br>
+                    var binds to this.
+                </p>
+                <h4>Block Scope</h4>
+                <p>
+                    Declaring a variable with const is similar to let when it comes to Block Scope. <br>
+                    The x declared in the block, in this example, is not the same as the x declared outside the block: <br>
+                    Example <br>
+                    const x = 10; <br>
+                    // Here x is 10
+                    <br>
+                    { <br>
+                    const x = 2; <br>
+                    // Here x is 2
+                    <br>
+                    } <br>
+                    // Here x is 10
+                </p>
+                <h4>Redeclaring</h4>
+                <p>
+                    Redeclaring a JavaScript var variable is allowed anywhere in a program: <br>
+                    Example <br>
+                    var x = 2;     // Allowed <br>
+                    var x = 3;     // Allowed <br>
+                    x = 4;         // Allowed <br> 
+                    Redeclaring an existing var or let variable to const, in the same scope, is not allowed: <br>
+                    Example <br>
+                    var x = 2;     // Allowed <br>
+                    const x = 2;   // Not allowed <br>
+                    { <br>
+                    let x = 2;     // Allowed <br>
+                    const x = 2;   // Not allowed <br>
+                    } <br>
+                    { <br>
+                    const x = 2;   // Allowed <br>
+                    const x = 2;   // Not allowed <br>
+                    } <br>
+                    Reassigning an existing const variable, in the same scope, is not allowed: <br>
+                    Example <br>
+                    const x = 2;     // Allowed <br>
+                    x = 2;           // Not allowed <br>
+                    var x = 2;       // Not allowed <br>
+                    let x = 2;       // Not allowed <br>
+                    const x = 2;     // Not allowed <br>
+                    { <br>
+                      const x = 2;   // Allowed <br>
+                      x = 2;         // Not allowed <br>
+                      var x = 2;     // Not allowed <br>
+                      let x = 2;     // Not allowed <br>
+                      const x = 2;   // Not allowed <br>
+                    } <br>
+                    Redeclaring a variable with const, in another scope, or in another block, is allowed: <br>
+                    Example <br>
+                    const x = 2;       // Allowed <br>
+                    { <br>
+                      const x = 3;   // Allowed <br>
+                    } <br>
+                    { <br>
+                      const x = 4;   // Allowed <br>
+                    }
+                </p>
+                <h4>Hoisting</h4>
+                <p>
+                    Variables defined with var are hoisted to the top and can be initialized at any time. <br>
+                    Meaning: You can use the variable before it is declared: <br>
+                    Example <br>
+                    This is OK: <br>
+                    carName = "Volvo"; <br>
+                    var carName; <br>
+                    If you want to learn more about hoisting, study the chapter JavaScript Hoisting. <br>
+                    Variables defined with const are also hoisted to the top, but not initialized. <br>
+                    Meaning: Using a const variable before it is declared will result in a ReferenceError: <br>
+                    Example <br>
+                    alert (carName); <br>
+                    const carName = "Volvo";
+                </p>
+            </div>
+            <!--OPERATORS-->
+            <div>
+                <h4>JavaScript Operators</h4>
+                <p>
+                    Javascript operators are used to perform different types of mathematical and logical computations. <br>
+                    Examples: <br>
+                    The Assignment Operator = assigns values <br>
+                    The Addition Operator + adds values <br>
+                    The Multiplication Operator * multiplies values <br>
+                    The Comparison Operator > compares values
+                </p>
+                <h4>JavaScript Assignment</h4>
+                <p>
+                    The Assignment Operator (=) assigns a value to a variable: <br>
+                    Assignment Examples <br>
+                    let x = 10; <br>
+                    // Assign the value 5 to x
+                    <br>
+                    let x = 5; <br>
+                    // Assign the value 2 to y
+                    <br>
+                    let y = 2; <br>
+                    // Assign the value x + y to z: 
+                    <br>
+                    let z = x + y;
+                </p>
+                <h4>JavaScript Addition</h4>
+                <p>
+                    The Addition Operator (+) adds numbers: <br>
+                    Adding <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x + y; <br>
+                </p>
+                <h4>JavaScript Multiplication</h4>
+                <p>
+                    The Multiplication Operator (*) multiplies numbers: <br>
+                    Multiplying <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x * y;
+                </p>
+                <h4>Types of JavaScript Operators</h4>
+                <p>
+                    There are different types of JavaScript operators: <br>
+                    - Arithmetic Operators <br>
+                    - Assignment Operators <br>
+                    - Comparison Operators <br>
+                    - String Operators <br>
+                    - Logical Operators <br>
+                    - Bitwise Operators <br>
+                    - Ternary Operators <br>
+                    - Type Operators                    
+                </p>
+                <h4>JavaScript Arithmetic Operators</h4>
+                <p>
+                    Arithmetic Operators are used to perform arithmetic on numbers: <br>
+                    Arithmetic Operators Example <br>
+                    let a = 3; <br>
+                    let x = (100 + 50) * a;
+                </p>
+                <h4>JavaScript Assignment Operators</h4>
+                <p>
+                    Assignment operators assign values to JavaScript variables. <br>
+                    The Addition Assignment Operator (+=) adds a value to a variable. <br>
+                    Assignment <br>
+                    let x = 10; <br>
+                    x += 5;
+                </p>
+                <h4>JavaScript Comparison Operators</h4>
+                
+                <h4>JavaScript String Comparison</h4>
+                <p>
+                    All the comparison operators above can also be used on strings: <br>
+                    Example <br>
+                    let text1 = "A"; <br>
+                    let text2 = "B"; <br>
+                    let result = text1 &lt; text2; <br>
+                    Note that strings are compared alphabetically: <br>
+                    Example <br>
+                    let text1 = "20"; <br>
+                    let text2 = "5"; <br>
+                    let result = text1 &lt; text2;
+                </p>
+                <h4>JavaScript String Addition</h4>
+                <p>
+                    The + can also be used to add (concatenate) strings: <br>
+                    Example <br>
+                    let text1 = "John"; <br>
+                    let text2 = "Doe"; <br>
+                    let text3 = text1 + " " + text2; <br>
+                    The += assignment operator can also be used to add (concatenate) strings: <br>
+                    Example <br>
+                    let text1 = "What a very "; <br>
+                    text1 += "nice day"; <br>
+                    The result of text1 will be: <br>
+                    What a very nice day <br>
+                    Note <br>
+                    When used on strings, the + operator is called the concatenation operator.
+                </p>
+                <h4>Adding Strings and Numbers</h4>
+                <p>
+                    Adding two numbers, will return the sum, but adding a number and a string will return a string: <br>
+                    Example <br>
+                    let x = 5 + 5; <br>
+                    let y = "5" + 5; <br>
+                    let z = "Hello" + 5; <br>
+                    The result of x, y, and z will be: <br>
+                    10 <br>
+                    55 <br>
+                    Hello5 <br>
+                    Note <br>
+                    If you add a number and a string, the result will be a string!
+                </p>
+                <h4>JavaScript Logical Operators</h4>
+                <img src="imgs/op1.png" width="70%">
+                <h4>JavaScript Type Operators</h4>
+                <img src="imgs/op2.png" width="70%">
+                <h4>JavaScript Bitwise Operators</h4>
+                <p>
+                    Bit operators work on 32 bits numbers. <br>
+                    Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+                </p>
+                <img src="imgs/op3.png" width="70%">
+            </div>
+            <!--ARITHMETIC-->
+            <div>
+                <h4>JavaScript Arithmetic</h4>
+                <p>
+                    Arithmetic operators perform arithmetic on numbers (literals or variables).
+                </p> <br>
+                <img src="imgs/ar1.png" width="70%">
+                <h4>Arithmetic Operations</h4>
+                <p>
+                    A typical arithmetic operation operates on two numbers. <br>
+                    The two numbers can be literals: <br>
+                    Example <br>
+                    let x = 100 + 50; <br>
+                    or variables: <br>
+                    Example <br>
+                    let x = a + b; <br>
+                    or expressions: <br>
+                    Example <br>
+                    let x = (100 + 50) * a;
+                </p>
+                <h4>Operators and Operands</h4>
+                <p>
+                    The numbers (in an arithmetic operation) are called operands. <br>
+                    The operation (to be performed between the two operands) is defined by an operator.
+                </p> <br>
+                <img src="imgs/ar2.png" width="70%">
+                <h4>Adding</h4>
+                <p>
+                    The addition operator (+) adds numbers: <br> 
+                    Example <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x + y;
+                </p>
+                <h4>Subtracting</h4>
+                <p>
+                    The subtraction operator (-) subtracts numbers. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x - y;
+                </p>
+                <h4>Multiplying</h4>
+                <p>
+                    The multiplication operator (*) multiplies numbers. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x * y;                    
+                </p>
+                <h4>Dividing</h4>
+                <p>
+                    The division operator (/) divides numbers. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x / y;
+                </p>
+                <h4>Remainder</h4>
+                <p>
+                    The modulus operator (%) returns the division remainder. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    let y = 2; <br>
+                    let z = x % y; <br>
+                    In arithmetic, the division of two integers produces a quotient and a remainder. <br>
+                    In mathematics, the result of a modulo operation is the remainder of an arithmetic division.
+                </p>
+                <h4>Incrementing</h4>
+                <p>
+                    The increment operator (++) increments numbers. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    x++; <br>
+                    let z = x;
+                </p>
+                <h4>Decrementing</h4>
+                <p>
+                    The decrement operator (--) decrements numbers. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    x--; <br>
+                    let z = x;
+                </p>
+                <h4>Exponentiation</h4>
+                <p>
+                    The exponentiation operator (**) raises the first operand to the power of the second operand. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    let z = x ** 2; <br>
+                    x ** y produces the same result as Math.pow(x,y): <br>                    
+                    Example <br>
+                    let x = 5; <br>
+                    let z = Math.pow(x,2);
+                </p>
+                <h4>Operator Precedence</h4>
+                <p>
+                    Operator precedence describes the order in which operations are performed in an arithmetic expression. <br>
+                    Example <br>
+                    let x = 100 + 50 * 3; <br>
+                    Is the result of example above the same as 150 * 3, or is it the same as 100 + 150? <br>
+                    Is the addition or the multiplication done first? <br>
+                    As in traditional school mathematics, the multiplication is done first. <br>
+                    Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-). <br>
+                    And (as in school mathematics) the precedence can be changed by using parentheses. <br>
+                    When using parentheses, the operations inside the parentheses are computed first: <br>
+                    Example <br>
+                    let x = (100 + 50) * 3; <br>
+                    When many operations have the same precedence (like addition and subtraction or multiplication and division), they are computed from left to right: <br>
+                    Examples <br>
+                    let x = 100 + 50 - 3; <br>
+                    let x = 100 / 50 * 3; <br>
+                    Note <br>
+                    For a full list of operator precedence values go to: 
+                </p>
+            </div>
+            <!--ASSIGNMENT-->
+            <div>
+                <h4>JavaScript Assignment</h4>
+                <p>
+                    JavaScript Assignment Operators <br>
+                    Assignment operators assign values to JavaScript variables.
+                </p> <br>
+                <img src="imgs/a1.png" width="70%">
+                <h4>Shift Assignment Operators</h4>
+                <br>
+                <img src="imgs/a2.png" width="70%">
+                <h4>Bitwise Assignment Operators</h4>
+                <br>
+                <img src="imgs/a3.png" width="70%">
+                <h4>Logical Assignment Operators</h4>
+                <br>
+                <img src="imgs/a4.png" width="70%">
+                <h4>The = Operator</h4>
+                <p>
+                    The Simple Assignment Operator assigns a value to a variable. <br>
+                    Simple Assignment Examples <br>
+                    let x = 10; <br>
+                    let x = 10 + y;
+                </p>
+                <h4>The += Operator</h4>
+                <p>
+                    The Addition Assignment Operator adds a value to a variable. <br>
+                    Addition Assignment Examples <br>
+                    let x = 10; <br>
+                    x += 5; <br>
+                    let text = "Hello"; text += " World";
+                </p>
+                <h4>The -= Operator</h4>
+                <p>
+                    The Subtraction Assignment Operator subtracts a value from a variable. <br>
+                    Subtraction Assignment Example <br>
+                    let x = 10; <br>
+                    x -= 5;           
+                </p>
+                <h4>The *= Operator</h4>
+                <p>
+                    The Multiplication Assignment Operator multiplies a variable. <br>
+                    Multiplication Assignment Example <br>
+                    let x = 10; <br>
+                    x *= 5;
+                </p>
+                <h4>The **= Operator</h4>
+                <p>
+                    The Exponentiation Assignment Operator raises a variable to the power of the operand. <br>
+                    Exponentiation Assignment Example <br>
+                    let x = 10; <br>
+                    x **= 5;
+                </p>
+                <h4>The /= Operator</h4>
+                <p>
+                    The Division Assignment Operator divides a variable. <br>
+                    Division Assignment Example <br>
+                    let x = 10; <br>
+                    x /= 5;
+                </p>
+                <h4>The %= Operator</h4>
+                <p>
+                    The Remainder Assignment Operator assigns a remainder to a variable. <br>
+                    Remainder Assignment Example <br>
+                    let x = 10; <br>
+                    x %= 5;
+                </p>
+                <h4>The &lt;&lt;= Operator</h4>
+                <p>
+                    The Left Shift Assignment Operator left shifts a variable. <br>
+                    Left Shift Assignment Example <br>
+                    let x = -100; <br>
+                    x &lt;&lt;= 5;
+                </p>
+                <h4>The &gt;&gt;= Operator</h4>
+                <p>
+                    The Right Shift Assignment Operator right shifts a variable (signed). <br>
+                    Right Shift Assignment Example <br>
+                    let x = -100; <br>
+                    x >>= 5;
+                </p>
+                <h4>The >>>= Operator</h4>
+                <p>
+                    The Unsigned Right Shift Assignment Operator right shifts a variable (unsigned). <br>
+                    Unsigned Right Shift Assignment Example <br>
+                    let x = -100; <br>
+                    x >>>= 5;
+                </p>
+                <h4>The &= Operator</h4>
+                <p>
+                    The Bitwise AND Assignment Operator does a bitwise AND operation on two operands and assigns the result to the the variable. <br>
+                    Bitwise AND Assignment Example <br>
+                    let x = 10; <br>
+                    x &= 5;
+                </p>
+                <h4>The |= Operator</h4>
+                <p>
+                    The Bitwise OR Assignment Operator does a bitwise OR operation on two operands and assigns the result to the variable. <br>
+                    Bitwise OR Assignment Example <br>
+                    let x = 10; <br>
+                    x |= 5;
+                </p>
+                <h4>The ^= Operator</h4>
+                <p>
+                    The Bitwise XOR Assignment Operator does a bitwise XOR operation on two operands and assigns the result to the variable. <br>
+                    Bitwise XOR Assignment Example <br>
+                    let x = 10; <br>''
+                    x ^= 5;
+                </p>
+                <h4>The &&= Operator</h4>
+                <p>
+                    The Logical AND assignment operator is used between two values. <br>
+                    If the first value is true, the second value is assigned. <br>
+                    Logical AND Assignment Example <br>
+                    let x = 10; <br>
+                    x &&= 5;
+                </p>
+                <h4>The ||= Operator</h4>
+                <p>
+                    The Logical OR assignment operator is used between two values. <br>
+                    If the first value is false, the second value is assigned. <br>
+                    Logical OR Assignment Example <br>
+                    let x = 10; <br>
+                    x ||= 5;
+                </p>
+                <h4>The ??= Operator</h4>
+                <p>
+                    The Nullish coalescing assignment operator is used between two values. <br>
+                    If the first value is undefined or null, the second value is assigned. <br>
+                    Nullish Coalescing Assignment Example <br>
+                    let x; <br>
+                    x ??= 5;
+                </p>
+            </div>
+            <!--DATATYPES-->
+            <div>
+                <h4>JavaScript Data Types</h4>
+                <p>
+                    JavaScript has 8 Datatypes <br>
+                    - String <br>
+                    - Number <br>
+                    - Bigint <br>
+                    - Boolean <br>
+                    - Undefined <br>
+                    - Null <br>
+                    - Symbol <br>
+                    - Object <br>
+                    The Object Datatype <br>
+                    The object data type can contain both built-in objects, and user defined objects: <br>
+                    Built-in object types can be: <br>
+                    objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more. <br>
+                    Examples <br>
+                    // Numbers:
+                    <br>
+                    let length = 16; <br>
+                    let weight = 7.5; <br>
+                    // Strings:
+                    <br>
+                    let color = "Yellow"; <br>
+                    let lastName = "Johnson"; <br>
+                    // Booleans
+                    <br>
+                    let x = true; <br>
+                    let y = false; <br>
+                    // Object:
+                    <br>
+                    const person = {firstName:"John", lastName:"Doe"}; <br>
+                    // Array object:
+                    <br>
+                    const cars = ["Saab", "Volvo", "BMW"]; <br>
+                    // Date object:
+                    <br>
+                    const date = new Date("2022-03-25"); <br>
+                    Note <br>
+                    A JavaScript variable can hold any type of data.
+                </p>
+                <h4>The Concept of Data Types</h4>
+                <p>
+                    In programming, data types is an important concept. <br>
+                    To be able to operate on variables, it is important to know something about the type. <br>
+                    Without data types, a computer cannot safely solve this: <br>
+                    let x = 16 + "Volvo"; <br>
+                    Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result? <br>
+                    JavaScript will treat the example above as: <br>
+                    let x = "16" + "Volvo"; <br>
+                    Note <br>
+                    When adding a number and a string, JavaScript will treat the number as a string. <br>
+                    Example <br>
+                    let x = 16 + "Volvo"; <br>
+                    Example <br>
+                    let x = "Volvo" + 16; <br>
+                    JavaScript evaluates expressions from left to right. Different sequences can produce different results: <br>
+                    JavaScript: <br>
+                    let x = 16 + 4 + "Volvo"; <br>
+                    Result: <br>
+                    20Volvo <br>
+                    JavaScript: <br>
+                    let x = "Volvo" + 16 + 4; <br>
+                    Result: <br>
+                    Volvo164 <br>
+                    In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo". <br>
+                    In the second example, since the first operand is a string, all operands are treated as strings.
+                </p>
+                <h4>JavaScript Types are Dynamic</h4>
+                <p>
+                    JavaScript has dynamic types. This means that the same variable can be used to hold different data types: <br>
+                    Example <br>
+                    let x;       // Now x is undefined <br>
+                    x = 5;       // Now x is a Number <br>
+                    x = "John";  // Now x is a String
+                </p>
+                <h4>JavaScript Strings</h4>
+                <p>
+                    A string (or a text string) is a series of characters like "John Doe". <br>
+                    Strings are written with quotes. You can use single or double quotes: <br>
+                    Example <br>
+                    // Using double quotes:
+                    <br>
+                    let carName1 = "Volvo XC60"; <br>
+                    // Using single quotes:
+                    <br>
+                    let carName2 = 'Volvo XC60'; <br>
+                    You can use quotes inside a string, as long as they don't match the quotes surrounding the string: <br>
+                    Example <br>
+                    // Single quote inside double quotes:
+                    <br>
+                    let answer1 = "It's alright"; <br>
+                    // Single quotes inside double quotes:
+                    <br>
+                    let answer2 = "He is called 'Johnny'"; <br>
+                    // Double quotes inside single quotes: 
+                    <br>
+                    let answer3 = 'He is called "Johnny"';
+                </p>
+                <h4>JavaScript Numbers</h4>
+                <p>
+                    All JavaScript numbers are stored as decimal numbers (floating point). <br>
+                    Numbers can be written with, or without decimals: <br>
+                    Example <br>
+                    // With decimals:
+                    <br>
+                    let x1 = 34.00; <br>
+                    // Without decimals:
+                    <br>
+                    let x2 = 34;
+                </p>
+                <h4>Exponential Notation</h4>
+                <p>
+                    Extra large or extra small numbers can be written with scientific (exponential) notation: <br>
+                    Example <br>
+                    let y = 123e5;    // 12300000 <br>
+                    let z = 123e-5;   // 0.00123  <br>
+                    Note <br>
+                    Most programming languages have many number types: <br>
+                    Whole numbers (integers): <br>
+                    byte (8-bit), short (16-bit), int (32-bit), long (64-bit) <br>
+                    Real numbers (floating-point): <br>
+                    float (32-bit), double (64-bit). <br>
+                    Javascript numbers are always one type: <br>
+                    double (64-bit floating point).
+                </p>
+                <h4>JavaScript BigInt</h4>
+                <p>
+                    All JavaScript numbers are stored in a 64-bit floating-point format. <br>
+                    JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number. <br>
+                    Example <br>
+                    let x = BigInt("123456789012345678901234567890");
+                </p>
+                <h4>JavaScript Booleans</h4>
+                <p>
+                    Booleans can only have two values: true or false. <br>
+                    Example <br>
+                    let x = 5; <br>
+                    let y = 5; <br>
+                    let z = 6; <br>
+                    (x == y)       // Returns true <br>
+                    (x == z)       // Returns false <br>
+                    Booleans are often used in conditional testing.
+                </p>
+                <h4>JavaScript Arrays</h4>
+                <p>
+                    JavaScript arrays are written with square brackets. <br>
+                    Array items are separated by commas. <br>
+                    The following code declares (creates) an array called cars, containing three items (car names): <br>
+                    Example <br>
+                    const cars = ["Saab", "Volvo", "BMW"]; <br>
+                    Array indexes are zero-based, which means the first item is [0], second is [1], and so on. <br>
+                </p>
+                <h4>JavaScript Objects</h4>
+                <p>
+                    JavaScript objects are written with curly braces {}. <br>
+                    Object properties are written as name:value pairs, separated by commas. <br>
+                    Example <br>
+                    const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+                    The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.
+                </p>
+                <h4>The typeof Operator</h4>
+                <p>
+                    You can use the JavaScript typeof operator to find the type of a JavaScript variable. <b></b>
+                    The typeof operator returns the type of a variable or an expression: <br>
+                    Example <br>
+                    typeof ""             // Returns "string" <br>
+                    typeof "John"         // Returns "string" <br>
+                    typeof "John Doe"     // Returns "string" <br>
+                    Example <br>
+                    typeof 0              // Returns "number" <br>
+                    typeof 314            // Returns "number" <br>
+                    typeof 3.14           // Returns "number" <br>
+                    typeof (3)            // Returns "number" <br>
+                    typeof (3 + 4)        // Returns "number"
+                </p>
+                <h4>Undefined</h4>
+                <p>
+                    In JavaScript, a variable without a value, has the value undefined. The type is also undefined. <br>
+                    Example <br>
+                    let car;    // Value is undefined, type is undefined <br>
+                    Any variable can be emptied, by setting the value to undefined. The type will also be undefined. <br>
+                    Example <br>
+                    car = undefined;    // Value is undefined, type is undefined
+                </p>
+                <h4>Empty Values</h4>
+                <p>
+                    An empty value has nothing to do with undefined. <br>
+                    An empty string has both a legal value and a type. <br>
+                    Example <br>
+                    let car = "";    // The value is "", the typeof is "string"
+                </p>
+            </div>
+            <!--FUNCTIONS-->
+            <div>
+                <h4>JavaScript Functions</h4>
+                <p>
+                    A JavaScript function is a block of code designed to perform a particular task. <br>
+                    A JavaScript function is executed when "something" invokes it (calls it). <br>
+                    Example <br>
+                    // Function to compute the product of p1 and p2
+                    <br>
+                    function myFunction(p1, p2) { <br>
+                      return p1 * p2; <br>
+                    }
+                </p>
+                <h4>JavaScript Function Syntax</h4>
+                <p>
+                    A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). <br>
+                    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). <br>
+                    The parentheses may include parameter names separated by commas: <br>
+                    (parameter1, parameter2, ...) <br>
+                    The code to be executed, by the function, is placed inside curly brackets: {} <br>
+                    function name(parameter1, parameter2, parameter3) { <br>
+                      // code to be executed
+                    <br>
+                    } <br>
+                    Function parameters are listed inside the parentheses () in the function definition. <br>
+                    Function arguments are the values received by the function when it is invoked. <br>
+                    Inside the function, the arguments (the parameters) behave as local variables.
+                </p>
+                <h4>Function Invocation</h4>
+                <p>
+                    The code inside the function will execute when "something" invokes (calls) the function: <br>
+                    When an event occurs (when a user clicks a button) <br>
+                    When it is invoked (called) from JavaScript code <br>
+                    Automatically (self invoked)
+                </p>
+                <h4>Function Return</h4>
+                <p>
+                    When JavaScript reaches a return statement, the function will stop executing. <br>
+                    If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. <br>
+                    Functions often compute a return value. The return value is "returned" back to the "caller": <br>
+                    Example <br>
+                    Calculate the product of two numbers, and return the result: <br>
+                    // Function is called, the return value will end up in x br
+                    let x = myFunction(4, 3); <br>
+                    function myFunction(a, b) { <br>
+                    // Function returns the product of a and b
+                    <br>
+                      return a * b; <br>
+                    }
+                </p>
+                <h4>The () Operator</h4>
+                <p>
+                    The () operator invokes (calls) the function: <br>
+                    Example <br>
+                    Convert Fahrenheit to Celsius: <br>
+                    function toCelsius(fahrenheit) { <br>
+                      return (5/9) * (fahrenheit-32); <br>
+                    } <br>
+                    let value = toCelsius(77); <br>
+                    Accessing a function with incorrect parameters can return an incorrect answer: <br>
+                    Example <br>
+                    function toCelsius(fahrenheit) { <br>
+                      return (5/9) * (fahrenheit-32); <br>
+                    } <br>
+                    let value = toCelsius(); <br>
+                    Accessing a function without () returns the function and not the function result: <br>
+                    Example <br>
+                    function toCelsius(fahrenheit) { <br>
+                      return (5/9) * (fahrenheit-32); <br>
+                    } <br>
+                    let value = toCelsius; <br>
+                    Note <br>
+                    As you see from the examples above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+                </p>
+                <h4>Functions Used as Variable Values</h4>
+                <p>
+                    Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations. <br>
+                    Example <br>
+                    Instead of using a variable to store the return value of a function: <br>
+                    let x = toCelsius(77); <br>
+                    let text = "The temperature is " + x + " Celsius"; <br>
+                    You can use the function directly, as a variable value: <br>
+                    let text = "The temperature is " + toCelsius(77) + " Celsius";
+                </p>
+                <h4>Local Variables</h4>
+                <p>
+                    Variables declared within a JavaScript function, become LOCAL to the function. <br>
+                    Local variables can only be accessed from within the function. <br>
+                    Example <br>
+                    // code here can NOT use carName
+                    <br>
+                    function myFunction() { <br>
+                    let carName = "Volvo"; <br>
+                      // code here CAN use carName
+                    <br>
+                    } <br>
+                    // code here can NOT use carName
+                    <br>
+                    Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. <br>
+                    Local variables are created when a function starts, and deleted when the function is completed.
+                </p>
+            </div>
+            <!--OBJECTS-->
+            <div>
+                <h4>JavaScript Objects</h4>
+                <h4>Object Properties</h4>
+                <p>
+                    A real life car has properties like weight and color: <br>
+                    car.name = Fiat, car.model = 500, car.weight = 850kg, car.color = white. <br>
+                    Car objects have the same properties, but the values differ from car to car.
+                </p>
+                <h4>Object Methods</h4>
+                <p>
+                    A real life car has methods like start and stop: <br>
+                    car.start(), car.drive(), car.brake(), car.stop(). <br>
+                    Car objects have the same methods, but the methods are performed at different times.
+                </p>
+                <h4>JavaScript Variables</h4>
+                <p>
+                    JavaScript variables are containers for data values. <br>
+                    This code assigns a simple value (Fiat) to a variable named car: <br>
+                    Example <br>
+                    let car = "Fiat";
+                </p>
+                <h4>JavaScript Objects</h4>
+                <p>
+                    Objects are variables too. But objects can contain many values. <br>
+                    This code assigns many values (Fiat, 500, white) to an object named car: <br>
+                    Example <br>
+                    const car = {type:"Fiat", model:"500", color:"white"};
+                </p>
+                <h4>JavaScript Object Definition</h4>
+                <p>
+                    How to Define a JavaScript Object
+                    - Using an Object Literal <br>
+                    - Using the new Keyword <br>
+                    - Using an Object Constructor
+                </p>
+                <h4>JavaScript Object Literal</h4>
+                <p>
+                    An object literal is a list of name:value pairs inside curly braces {}. <br>
+                    {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+                </p>
+                <h4>Creating a JavaScript Object</h4>
+                <p>
+                    These examples create a JavaScript object with 4 properties: <br>
+                    Examples <br>
+                    // Create an Object
+                    <br>
+                    const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+                    Spaces and line breaks are not important. An object initializer can span multiple lines: <br>
+                    // Create an Object
+                    <br>
+                    const person = { <br>
+                    firstName: "John", <br>
+                    lastName: "Doe", <br>
+                    age: 50, <br>
+                    eyeColor: "blue" <br>
+                    }; <br>
+                    This example creates an empty JavaScript object, and then adds 4 properties: <br>
+                    // Create an Object
+                    <br>
+                    const person = {}; <br>
+                    // Add Properties
+                    <br>
+                    person.firstName = "John"; <br>
+                    person.lastName = "Doe"; <br>
+                    person.age = 50; <br>
+                    person.eyeColor = "blue";
+                </p>
+                <h4>Using the new Keyword</h4>
+                <p>
+                    This example create a new JavaScript object using new Object(), and then adds 4 properties: <br>
+                    Example <br>
+                    // Create an Object 
+                    <br>
+                    const person = new Object(); <br>
+                    // Add Properties
+                    <br>
+                    person.firstName = "John"; <br>
+                    person.lastName = "Doe"; <br>
+                    person.age = 50; <br>
+                    person.eyeColor = "blue";
+                </p>
+                <h4>Object Properties</h4>
+                <p>
+                    The named values, in JavaScript objects, are called properties.
+                </p> <br>
+                <img src="imgs/o1.png" width="70%">
+                <p>
+                    Objects written as name value pairs are similar to: <br>
+                    - Associative arrays in PHP <br>
+                    - Dictionaries in Python <br>
+                    - Hash tables in C <br>
+                    - Hash maps in Java <br>
+                    - Hashes in Ruby and Perl
+                </p>
+                <h4>Accessing Object Properties</h4>
+                <p>
+                    You can access object properties in two ways: <br>
+                    objectName.propertyName <br>
+                    objectName["propertyName"] <br>
+                    Examples <br>
+                    person.lastName; <br>
+                    person["lastName"];                    
+                </p>
+                <h4>JavaScript Object Methods</h4>
+                <p>
+                    Methods are actions that can be performed on objects. <br>
+                    Methods are function definitions stored as property values.
+                </p> <br>
+                <img src="imgs/o2.png" width="70%">
+                <p>
+                    Example <br>
+                    const person = { <br>
+                    firstName: "John", <br>
+                    lastName : "Doe", <br>
+                    id       : 5566, <br>
+                    fullName : function() { <br>
+                        return this.firstName + " " + this.lastName; <br>
+                    } <br>
+                    }; <br>
+                    In the example above, this refers to the person object: <br>
+                    this.firstName means the firstName property of person. <br>
+                    this.lastName means the lastName property of person.
+                </p>
+                <h4>In JavaScript, Objects are King.</h4>
+                <p>
+                    If you Understand Objects, you Understand JavaScript. <br>
+                    Objects are containers for Properties and Methods. <br>
+                    Properties are named Values. <br>
+                    Methods are Functions stored as Properties. <br>
+                    Properties can be primitive values, functions, or even other objects. <br>
+                    In JavaScript, almost "everything" is an object. <br>
+                    - Objects are objects <br>
+                    - Maths are objects <br>
+                    - Functions are objects <br>
+                    - Dates are objects <br>
+                    - Arrays are objects <br>
+                    - Maps are objects <br>
+                    - Sets are objects <br>
+                    All JavaScript values, except primitives, are objects.
+                </p>
+                <h4>JavaScript Primitives</h4>
+                <p>
+                    A primitive value is a value that has no properties or methods. <br>
+                    3.14 is a primitive value <br>
+                    A primitive data type is data that has a primitive value. <br>
+                    JavaScript defines 7 types of primitive data types: <br>
+                    - string <br>
+                    - number <br>
+                    - boolean <br>
+                    - null <br>
+                    - undefined <br>
+                    - symbol <br>
+                    - bigint
+                </p>
+                <h4>Immutable</h4>
+                <p>
+                    Primitive values are immutable (they are hardcoded and cannot be changed). <br>
+                    if x = 3.14, you can change the value of x, but you cannot change the value of 3.14.
+                </p> <br>
+                <img src="imgs/o3.png" width="70%">
+                <h4>JavaScript Objects are Mutable</h4>
+                <p>
+                    Objects are mutable: They are addressed by reference, not by value. <br>
+                    If person is an object, the following statement will not create a copy of person: <br>
+                    const x = person; <br>
+                    The object x is not a copy of person. The object x is person. <br>
+                    The object x and the object person share the same memory address. <br>
+                    Any changes to x will also change person: <br>
+                    Example <br>
+                    //Create an Object 
+                    <br>
+                    const person = { <br>
+                    firstName:"John", <br>
+                    lastName:"Doe", <br>
+                    age:50, eyeColor:"blue" <br>
+                    } <br>
+                    // Create a copy
+                    <br>
+                    const x = person; <br>
+                    // Change Age in both
+                    <br>
+                    x.age = 10;
+                </p>
+            </div>
+            <!--OBJECT PROPERTIES-->
+            <div>
+                <h4>JavaScript Object Properties</h4>
+                <p>
+                    An Object is an Unordered Collection of Properties <br>
+                    Properties are the most important part of JavaScript objects. <br>
+                    Properties can be changed, added, deleted, and some are read only.
+                </p>
+                <h4>Accessing JavaScript Properties</h4>
+                <p>
+                    The syntax for accessing the property of an object is: <br>
+                    // objectName.property
+                    <br>
+                    let age = person.age; <br>
+                    or <br>
+                    //objectName["property"]
+                    <br>
+                    let age = person["age"]; <br>
+                    or <br>
+                    //objectName[expression]
+                    <br>
+                    let age = person[x]; <br>
+                    Examples <br>
+                    person.firstname + " is " + person.age + " years old."; <br>
+                    person["firstname"] + " is " + person["age"] + " years old."; <br>
+                    let x = "firstname"; <br>
+                    let y = "age"; <br>
+                    person[x] + " is " + person[y] + " years old.";
+                </p>
+                <h4>Adding New Properties</h4>
+                <p>
+                    You can add new properties to an existing object by simply giving it a value: <br>
+                    Example <br>
+                    person.nationality = "English";
+                </p>
+                <h4>Deleting Properties</h4>
+                <p>
+                    The delete keyword deletes a property from an object: <br>
+                    Example <br>
+                    const person = { <br>
+                    firstName: "John", <br>
+                    lastName: "Doe", <br>
+                    age: 50, <br>
+                    eyeColor: "blue" <br>
+                    }; <br>
+                    delete person.age; <br>
+                    or delete person["age"]; <br>
+                    Example <br>
+                    const person = { <br>
+                    firstName: "John", <br>
+                    lastName: "Doe", <br>
+                    age: 50, <br>
+                    eyeColor: "blue" <br>
+                    }; <br>
+                    delete person["age"]; <br>
+                    Note: <br>
+                    The delete keyword deletes both the value of the property and the property itself. <br>
+                    After deletion, the property cannot be used before it is added back again.
+                </p>
+                <h4>Nested Objects</h4>
+                <p>
+                    Property values in an object can be other objects: <br>
+                    Example <br>
+                    myObj = { <br>
+                    name:"John", <br>
+                    age:30, <br>
+                    myCars: { <br>
+                        car1:"Ford", <br>
+                        car2:"BMW", <br>
+                        car3:"Fiat" <br>
+                    } <br>
+                    } <br>
+                    You can access nested objects using the dot notation or the bracket notation: <br>
+                    Examples <br>
+                    myObj.myCars.car2; <br>
+                    myObj.myCars["car2"]; <br>
+                    myObj["myCars"]["car2"]; <br>
+                    let p1 = "myCars"; <br>
+                    let p2 = "car2"; <br>
+                    myObj[p1][p2];
+                </p>
+            </div>
+            <!--OBJECTS METHOD-->
+            <div>
+                <h4>JavaScript Object Methods</h4>
+                <p>
+                    Object methods are actions that can be performed on objects. <br>
+                    A method is a function definition stored as a property value. <br>
+                    Example <br>
+                    const person = { <br>
+                    firstName: "John", <br>
+                    lastName: "Doe", <br>
+                    id: 5566, <br>
+                    fullName: function() { <br>
+                        return this.firstName + " " + this.lastName; <br>
+                    } <br>
+                    }; <br>
+                    In the example above, this refers to the person object: <br>
+                    this.firstName means the firstName property of person. <br>
+                    this.lastName means the lastName property of person.
+                </p>
+                <h4>Accessing Object Methods</h4>
+                <p>
+                    You access an object method with the following syntax: <br>
+                    objectName.methodName() <br>
+                    If you invoke the fullName property with (), it will execute as a function: <br>
+                    Example <br>
+                    name = person.fullName(); <br>
+                    If you access the fullName property without (), it will return the function definition: <br>
+                    Example <br>
+                    name = person.fullName;
+                </p>
+                <h4>Adding a Method to an Object</h4>
+                <p>
+                    Adding a new method to an object is easy: <br>
+                    Example <br>
+                    person.name = function () { <br>
+                    return this.firstName + " " + this.lastName; <br>
+                    };
+                </p>
+                <h4>Using JavaScript Methods</h4>
+                <p>
+                    This example uses the JavaScript toUpperCase() method to convert a text to uppercase: <br>
+                    Example <br>
+                    person.name = function () { <br>
+                    return (this.firstName + " " + this.lastName).toUpperCase(); <br>
+                    };
+                </p>
+            </div>
+            <!--OBJECT DISPLAY-->
+            <div>
+                <h4>JavaScript Display Objects</h4>
+                <h4>How to Display JavaScript Objects?</h4>
+                <p>
+                    Displaying a JavaScript object will output [object Object]. <br>
+                    Example <br>
+                    // Create an Object
+                    <br>
+                    const person = { <br>
+                    name: "John", <br>
+                    age: 30, <br>
+                    city: "New York" <br>
+                    }; <br>
+                    document.getElementById("demo").innerHTML = person; <br>
+                    Some solutions to display JavaScript objects are: <br>
+                    - Displaying the Object Properties by name <br>
+                    - Displaying the Object Properties in a Loop <br>
+                    - Displaying the Object using Object.values() <br>
+                    - Displaying the Object using JSON.stringify()
+                </p>
+                <h4>Displaying Object Properties</h4>
+                <p>
+                    The properties of an object can be displayed as a string: <br>
+                    Example <br>
+                    // Create an Object
+                    <br>
+                    const person = { <br>
+                    name: "John", <b></b>
+                    age: 30, <br>
+                    city: "New York" <br>
+                    }; <br>
+                    // Display Properties
+                    <br>
+                    document.getElementById("demo").innerHTML = <br>
+                    person.name + "," + person.age + "," + person.city;
+                </p>
+                <h4>Displaying Properties in a Loop</h4>
+            </div>
+            <!--OBJECT CONSTRUCTOR FUNCTIONS-->
+            <div>
+                <h4>JavaScript Object Constructors</h4>
+                <p>
+                    Object Constructor Functions <br>
+                    Sometimes we need to create many objects of the same type. <br>
+                    To create an object type we use an object constructor function. <br>
+                    It is considered good practice to name constructor functions with an upper-case first letter. <br>
+                    Object Type Person <br>
+                    function Person(first, last, age, eye) { <br>
+                    this.firstName = first; <br>
+                    this.lastName = last; <br>
+                    this.age = age; <br>
+                    this.eyeColor = eye; <br>
+                    } <br>
+                    Note: <br>
+                    In the constructor function, this has no value. <br>
+                    The value of this will become the new object when a new object is created. <br>
+                    Now we can use new Person() to create many new Person objects: <br>
+                    Example <br>
+                    const myFather = new Person("John", "Doe", 50, "blue"); <br>
+                    const myMother = new Person("Sally", "Rally", 48, "green"); <br>
+                    const mySister = new Person("Anna", "Rally", 18, "green"); <br>
+                    const mySelf = new Person("Johnny", "Rally", 22, "green");
+                </p>
+                <h4>Property Default Values</h4>
+                <p>
+                    A value given to a property will be a default value for all objects created by the constructor: <br>
+                    Example <br>
+                    function Person(first, last, age, eyecolor) { <br>
+                    this.firstName = first; <br>
+                    this.lastName = last; <br>
+                    this.age = age; <br>
+                    this.eyeColor = eyecolor; <br>
+                    this.nationality = "English"; <br>
+                    }
+                </p>
+                <h4>Adding a Property to an Object</h4>
+                <p>
+                    Adding a property to a created object is easy: <br>
+                    Example <br>
+                    myFather.nationality = "English"; <br>
+                    Note: <br>
+                    The new property will be added to myFather. Not to any other Person Objects.
+                </p>
+                <h4>Adding a Property to a Constructor</h4>
+                <p>
+                    You can NOT add a new property to an object constructor: <br>
+                    Example <br>
+                    Person.nationality = "English"; <br>
+                    To add a new property, you must add it to the constructor function prototype: <br>
+                    Example <br> 
+                    Person.prototype.nationality = "English";
+                </p>
+                <h4>Constructor Function Methods</h4>
+                <p>
+                    A constructor function can also have methods: <br>
+                    Example <br>
+                    function Person(first, last, age, eyecolor) { <br>
+                    this.firstName = first; <br>
+                    this.lastName = last; <br>
+                    this.age = age; <br>
+                    this.eyeColor = eyecolor; <br> 
+                    this.fullName = function() { <br>
+                        return this.firstName + " " + this.lastName; <br>
+                    }; <br>
+                    }
+                </p>
+                <h4>Adding a Method to an Object</h4>
+                <p>
+                    Adding a method to a created object is easy: <br>
+                    Example <br>
+                    myMother.changeName = function (name) { <br>
+                    this.lastName = name; <br>
+                    }
+                </p>
+                <h4>Adding a Method to a Constructor</h4>
+                <p>
+                    You cannot add a new method to an object constructor function. <br>
+                    This code will produce a TypeError: <br>
+                    Example <br>
+                    Person.changeName = function (name) { <br>
+                    this.lastName = name; <br>
+                    } <br>
+                    myMother.changeName("Doe"); <br>
+                    TypeError: myMother.changeName is not a function <br>
+                    Adding a new method must be done to the constructor function prototype: <br>
+                    Example <br>
+                    Person.prototype.changeName = function (name) { <br>
+                    this.lastName = name; <br>
+                    } <br>
+                    myMother.changeName("Doe"); <br>
+                    Note: <br>
+                    The changeName() function assigns the value of name to the person's lastName property, substituting this with myMother.
+                </p>
+                <h4>Built-in JavaScript Constructors</h4>
+                <p>
+                    JavaScript has built-in constructors for all native objects: <br>
+                    - new Object()   // A new Object object <br>
+                    - new Array()    // A new Array object <br>
+                    - new Map()      // A new Map object <br>
+                    - new Set()      // A new Set object <br>
+                    - new Date()     // A new Date object <br>
+                    - new RegExp()   // A new RegExp object <br>
+                    - new Function() // A new Function object <br>
+                    Note: <br>
+                    The Math() object is not in the list. Math is a global object. The new keyword cannot be used on Math.
+                </p>
+                <h4>Did You Know?</h4>
+                <p>
+                    Use object literals {} instead of new Object(). <br>
+                    Use array literals [] instead of new Array(). <br>
+                    Use pattern literals /()/ instead of new RegExp(). <br>
+                    Use function expressions () {} instead of new Function(). <br>
+                    Example <br>
+                    "";           // primitive string <br>
+                    0;            // primitive number <br>
+                    false;        // primitive boolean <br>
+                    {};           // object object <br>
+                    [];           // array object <br>
+                    /()/          // regexp object <br>
+                    function(){}; // function
+                </p>
+            </div>
+            <!--EVENTS-->
+            <div>
+                <h4>JavaScript Events</h4>
+                <p>
+                    HTML events are "things" that happen to HTML elements. <br>
+                    When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+                </p>
+                <h4>HTML Events</h4>
+                <p>
+                    An HTML event can be something the browser does, or something a user does. <br>
+                    Here are some examples of HTML events: <br>
+                    An HTML web page has finished loading <br>
+                    An HTML input field was changed <br>
+                    An HTML button was clicked <br>
+                    Often, when events happen, you may want to do something. <br>
+                    JavaScript lets you execute code when events are detected. <br>
+                    HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. <br>
+                    With single quotes: <br>
+                    &lt;element event='some JavaScript'&gt; <br>
+                    With double quotes: <br>
+                    &lt;element event="some JavaScript"&gt; <br>
+                    In the following example, an onclick attribute (with code), is added to a <button> element: <br>
+                    Example <br>
+                    &lt;button onclick="document.getElementById('demo').innerHTML = Date()"&gt;The time is?&lt;/button&gt; <br>
+                    In the example above, the JavaScript code changes the content of the element with id="demo". <br>
+                    In the next example, the code changes the content of its own element (using this.innerHTML): <br>
+                    Example <br>
+                    &lt;button onclick="this.innerHTML = Date()"&gt;The time is?&lt;/button&gt; <br>
+                    JavaScript code is often several lines long. It is more common to see event attributes calling functions: <br>
+                    Example <br>
+                    &lt;button onclick="displayDate()"&gt;The time is?&lt;/button&gt;
+                </p>
+                <h4>Common HTML Events</h4>
+                <p>
+                    Here is a list of some common HTML events:
+                </p> <br>
+                <img src="imgs/events.png" width="70%">
+                <h4>JavaScript Event Handlers</h4>
+                <p>
+                    Event handlers can be used to handle and verify user input, user actions, and browser actions: <br>
+                    Things that should be done every time a page loads <br>
+                    Things that should be done when the page is closed <br>
+                    Action that should be performed when a user clicks a button <br>
+                    Content that should be verified when a user inputs data <br>
+                    And more ... <br>
+                    Many different methods can be used to let JavaScript work with events: <br>
+                    HTML event attributes can execute JavaScript code directly <br>
+                    HTML event attributes can call JavaScript functions <br>
+                    You can assign your own event handler functions to HTML elements <br>
+                    You can prevent events from being sent or being handled <br>
+                    And more .
+                </p>
+            </div>
+            <!--STRINGS-->
+            <div>
+                <h4>JavaScript Strings</h4>
+                <p>
+                    Strings are for storing text <br>
+                    Strings are written with quotes
+                </p>
+                <h4>Using Quotes</h4>
+                <p>
+                    A JavaScript string is zero or more characters written inside quotes. <br>
+                    Example <br>
+                    let text = "John Doe"; <br>
+                    You can use single or double quotes: <br>
+                    Example <br>
+                    let carName1 = "Volvo XC60";  // Double quotes <br>
+                    let carName2 = 'Volvo XC60';  // Single quotes <br>
+                    Note <br>
+                    Strings created with single or double quotes works the same. <br>
+                    There is no difference between the two.
+                </p>
+                <h4>Quotes Inside Quotes</h4>
+                <p>
+                    You can use quotes inside a string, as long as they don't match the quotes surrounding the string: <br>
+                    Example <br>
+                    let answer1 = "It's alright"; <br>
+                    let answer2 = "He is called 'Johnny'"; <br>
+                    let answer3 = 'He is called "Johnny"';
+                </p>
+                <h4>Template Strings</h4>
+                <p>
+                    Templates were introduced with ES6 (JavaScript 2016). <br>
+                    Templates are strings enclosed in backticks (`This is a template string`). <b></b>
+                    Templates allow single and double quotes inside a string: <br>
+                    Example <br>
+                    let text = `He's often called "Johnny"`; <br>
+                    Note <br>
+                    Templates are not supported in Internet Explorer.
+                </p>
+                <h4>String Length</h4>
+                <p>
+                    To find the length of a string, use the built-in length property: <br>
+                    Example <br>
+                    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+                    let length = text.length;
+                </p>
+                <h4>Escape Characters</h4>
+                <p>
+                    Because strings must be written within quotes, JavaScript will misunderstand this string: <br>
+                    let text = "We are the so-called "Vikings" from the north."; <br>
+                    The string will be chopped to "We are the so-called ". <br>
+                    To solve this problem, you can use an backslash escape character. <br>
+                    The backslash escape character (\) turns special characters into string characters:
+                </p> <br>
+                <img src="imgs/esc.png" width="70%">
+                <p>
+                    Examples
+                    \" inserts a double quote in a string: <br>
+                    let text = "We are the so-called \"Vikings\" from the north."; <br>
+                    \' inserts a single quote in a string: <br>
+                    let text= 'It\'s alright.'; <br>
+                    \\ inserts a backslash in a string: <br>
+                    let text = "The character \\ is called backslash.";
+                </p> <br>
+                <img src="imgs/esc1.png" width="70%">
+                <p>
+                    Note <br>
+                    The 6 escape characters above were originally designed to control typewriters, teletypes, and fax machines. They do not make any sense in HTML.
+                </p>
+                <h4>Breaking Long Lines</h4>
+                <p>
+                    For readability, programmers often like to avoid long code lines. <br>
+                    A safe way to break up a statement is after an operator: <br>
+                    Example <br>
+                    document.getElementById("demo").innerHTML = <br>
+                    "Hello Dolly!"; <br>
+                    A safe way to break up a string is by using string addition: <br>
+                    Example <br>
+                    document.getElementById("demo").innerHTML = "Hello " + <br>
+                    "Dolly!";
+                </p>
+                <h4>Template Strings</h4>
+                <p>
+                    Templates were introduced with ES6 (JavaScript 2016). <br>
+                    Templates are strings enclosed in backticks (`This is a template string`). <br>
+                    Templates allow multiline strings: <br>
+                    Example <br>
+                    let text = <br>
+                    `The quick <br>
+                    brown fox <br>
+                    jumps over <br>
+                    the lazy dog`; <br>
+                    Note <br> 
+                    Templates are not supported in Internet Explorer.
+                </p>
+                <h4>JavaScript Strings as Objects</h4>
+                <p>
+                    Normally, JavaScript strings are primitive values, created from literals:
+
+                    let x = "John";
+                    But strings can also be defined as objects with the keyword new:
+                    
+                    let y = new String("John");
+                    Example
+                    let x = "John";
+                    let y = new String("John");
+                    Do not create Strings objects.
+                    
+                    The new keyword complicates the code and slows down execution speed. <br>
+                    String objects can produce unexpected results: <br>
+                    When using the == operator, x and y are equal: <br>
+                    let x = "John"; <br>
+                    let y = new String("John"); <br>
+                    When using the === operator, x and y are not equal: <br>
+                    let x = "John"; <br>
+                    let y = new String("John"); <br>
+                    Note the difference between (x==y) and (x===y). <br>
+                    (x == y) true or false? <br>
+                    let x = new String("John"); <br>
+                    let y = new String("John"); <br>
+                    (x === y) true or false? <br>
+                    let x = new String("John"); <br> 
+                    let y = new String("John"); <br>
+                    Comparing two JavaScript objects always returns false.
+                </p>
+            </div>
+            <!--STRINGS METHODS-->
+            <div>
+                <h4>JavaScript String Methods</h4>
+                <h4>Basic String Methods</h4>
+                <p>
+                    Javascript strings are primitive and immutable: All string methods produce a new string without altering the original string. <br>
+                    - String length <br>
+                    - String charAt() <br>
+                    - String charCodeAt() <br>
+                    - String at() <br>
+                    - String [ ] <br>
+                    - String slice() <br>
+                    - String substring() <br>
+                    - String substr() <br>
+                    - String toUpperCase() <br>
+                    - String toLowerCase() <br>
+                    - String concat() <br>
+                    - String trim() <br>
+                    - String trimStart() <br>
+                    - String trimEnd() <br>
+                    - String padStart() <br>
+                    - String padEnd() <br>
+                    - String repeat() <br>
+                    - String replace() <br>
+                    - String replaceAll() <br>
+                    - String split() <br>
+                </p>
+                <h4>JavaScript String Length</h4>
+                <p>
+                    The length property returns the length of a string: <br>
+                    Example <br>
+                    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+                    let length = text.length;
+                </p>
+                <h4>Extracting String Characters</h4>
+                <p>
+                    There are 4 methods for extracting string characters: <br>
+                    The at(position) Method <br>
+                    The charAt(position) Method <br>
+                    The charCodeAt(position) Method <br>
+                    Using property access [] like in arrays
+                </p>
+                <h4>JavaScript String charAt()</h4>
+                <p>
+                    The charAt() method returns the character at a specified index (position) in a string: <br>
+                    Example <br>
+                    let text = "HELLO WORLD"; <br>
+                    let char = text.charAt(0); 
+                </p>
+                <h4>JavaScript String charCodeAt()</h4>
+                <p>
+                    The charCodeAt() method returns the code of the character at a specified index in a string: <br>
+                    The method returns a UTF-16 code (an integer between 0 and 65535). <br>
+                    Example <br>
+                    let text = "HELLO WORLD"; <br>
+                    let char = text.charCodeAt(0);
+                </p>
+                <h4>JavaScript String at()</h4>
+                <p>
+                    ES2022 introduced the string method at(): <br>
+                    Examples <br>
+                    Get the third letter of name: <br>
+                    const name = "W3Schools"; <br>
+                    let letter = name.at(2); <br>
+                    Get the third letter of name: <br>
+                    const name = "W3Schools"; <br>
+                    let letter = name[2]; <br>
+                    The at() method returns the character at a specified index (position) in a string. <br>
+                    The at() method is supported in all modern browsers since March 2022: <br>
+                    Note <br>
+                    The at() method is a new addition to JavaScript. <br>
+                    It allows the use of negative indexes while charAt() do not. <br>
+                    Now you can use myString.at(-2) instead of charAt(myString.length-2).
+                </p>
+                <h4>Property Access [ ]</h4>
+                <p>
+                    let text = "HELLO WORLD"; <br>
+                    let char = text[0]; <br>
+                    Note <br> 
+                    Property access might be a little unpredictable: <br>
+                    It makes strings look like arrays (but they are not) <br>
+                    If no character is found, [ ] returns undefined, while charAt() returns an empty string. <br>
+                    It is read only. str[0] = "A" gives no error (but does not work!) <br>
+                    Example <br>
+                    let text = "HELLO WORLD"; <br>
+                    text[0] = "A";    // Gives no error, but does not work
+                </p>
+                <h4>Extracting String Parts</h4>
+                <p>
+                    There are 3 methods for extracting a part of a string: <br>
+                    slice(start, end) <br>
+                    substring(start, end) <br>
+                    substr(start, length)
+                </p>
+                <h4>JavaScript String slice()</h4>
+                <p>
+                    slice() extracts a part of a string and returns the extracted part in a new string. <br>
+                    The method takes 2 parameters: start position, and end position (end not included). <br>
+                    Example <br>
+                    Slice out a portion of a string from position 7 to position 13: <br>
+                    let text = "Apple, Banana, Kiwi"; <br>
+                    let part = text.slice(7, 13); <br>
+                    Note <br>
+                    JavaScript counts positions from zero. <br>
+                    First position is 0. <br>
+                    Second position is 1. <br>
+                    Examples <br>
+                    If you omit the second parameter, the method will slice out the rest of the string: <br>
+                    let text = "Apple, Banana, Kiwi"; <br>
+                    let part = text.slice(7); <br>
+                    If a parameter is negative, the position is counted from the end of the string: <br>
+                    let text = "Apple, Banana, Kiwi"; <br>
+                    let part = text.slice(-12); <br>
+                    This example slices out a portion of a string from position -12 to position -6: <br>
+                    let text = "Apple, Banana, Kiwi"; <br>
+                    let part = text.slice(-12, -6);
+                </p>
+                <h4>JavaScript String substring()</h4>
+                <p>
+                    substring() is similar to slice(). <br>
+                    The difference is that start and end values less than 0 are treated as 0 in substring(). <br>
+                    Example <br>
+                    let str = "Apple, Banana, Kiwi"; <br>
+                    let part = str.substring(7, 13); <br>
+                    If you omit the second parameter, substring() will slice out the rest of the string.
+                </p>
+                <h4>JavaScript String substr()</h4>
+                <p>
+                    substr() is similar to slice(). <br>
+                    The difference is that the second parameter specifies the length of the extracted part. <br>
+                    Example <br>
+                    let str = "Apple, Banana, Kiwi"; <br>
+                    let part = str.substr(7, 6); <br>
+                    If you omit the second parameter, substr() will slice out the rest of the string. <br>
+                    Example <br>
+                    let str = "Apple, Banana, Kiwi"; <br>
+                    let part = str.substr(7); <br>
+                    If the first parameter is negative, the position counts from the end of the string. <br>
+                    Example <br>
+                    let str = "Apple, Banana, Kiwi"; <br> 
+                    let part = str.substr(-4);
+                </p>
+                <h4>Converting to Upper and Lower Case</h4>
+                <p>
+                    A string is converted to upper case with toUpperCase(): <br>
+                    A string is converted to lower case with toLowerCase():
+                </p>
+                <h4>JavaScript String toUpperCase()</h4>
+                <p>
+                    Example <br>
+                    let text1 = "Hello World!"; <br>
+                    let text2 = text1.toUpperCase();
+                </p>
+                <h4>JavaScript String toLowerCase()</h4>
+                <p>
+                    Example <br>
+                    let text1 = "Hello World!";       // String <br>
+                    let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+                </p>
+                <h4>JavaScript String concat()</h4>
+                <p>
+                    concat() joins two or more strings: <br>
+                    Example <br>
+                    let text1 = "Hello"; <br>
+                    let text2 = "World"; <br>
+                    let text3 = text1.concat(" ", text2); <br>
+                    The concat() method can be used instead of the plus operator. These two lines do the same: <br>
+                    Example <br>
+                    text = "Hello" + " " + "World!"; <br>
+                    text = "Hello".concat(" ", "World!"); <br>
+                    Note <br>
+                    All string methods return a new string. They don't modify the original string. <br>
+                    Formally said: <br>
+                    Strings are immutable: Strings cannot be changed, only replaced.
+                </p>
+                <h4>JavaScript String trim()</h4>
+                <p>
+                    The trim() method removes whitespace from both sides of a string: <br>
+                    Example
+                    let text1 = "      Hello World!      "; <br>
+                    let text2 = text1.trim(); <br>
+                </p>
+                <h4>JavaScript String trimStart()</h4>
+                <p>
+                    ECMAScript 2019 added the String method trimStart() to JavaScript. <br>
+                    The trimStart() method works like trim(), but removes whitespace only from the start of a string. <br>
+                    Example <br>
+                    let text1 = "     Hello World!     "; <br>
+                    let text2 = text1.trimStart(); <br>        
+                </p>
+                <h4>JavaScript String trimEnd()</h4>
+                <P>
+                    ECMAScript 2019 added the string method trimEnd() to JavaScript. <br>
+                    The trimEnd() method works like trim(), but removes whitespace only from the end of a string. <br>    
+                    Example <br>
+                    let text1 = "     Hello World!     "; <br>
+                    let text2 = text1.trimEnd(); <br>
+                </P>
+                <h4>JavaScript String Padding</h4>
+                <p>
+                    ECMAScript 2017 added two new string methods to JavaScript: padStart() and padEnd() to support padding at the beginning and at the end of a string.
+                </p>
+                <h4>JavaScript String padStart()</h4>
+                <p>
+                    The padStart() method pads a string from the start. <br>
+                    It pads a string with another string (multiple times) until it reaches a given length. <br>
+                    Examples <br>
+                    Pad a string with "0" until it reaches the length 4: <br>
+                    let text = "5"; <br>
+                    let padded = text.padStart(4,"0"); <br>
+                    Pad a string with "x" until it reaches the length 4: <br>
+                    let text = "5"; <br>
+                    let padded = text.padStart(4,"x"); <br>
+                    Note <br>
+                    The padStart() method is a string method. <br>
+                    To pad a number, convert the number to a string first. <br>
+                    See the example below. <br>
+                    Example <br>
+                    let numb = 5; <br>
+                    let text = numb.toString(); <br>
+                    let padded = text.padStart(4,"0");
+                </p>
+                <h4>JavaScript String padEnd()</h4>
+                <p>
+                    The padEnd() method pads a string from the end. <br>
+                    It pads a string with another string (multiple times) until it reaches a given length. <br>
+                    Examples <br>
+                    let text = "5"; <br>
+                    let padded = text.padEnd(4,"0"); <br>
+                    let text = "5"; <br>
+                    let padded = text.padEnd(4,"x"); <br>
+                    Note <br>
+                    The padEnd() method is a string method. <br>
+                    To pad a number, convert the number to a string first. <br>
+                    See the example below. <br>
+                    Example <br>
+                    let numb = 5; <br>
+                    let text = numb.toString(); <br>
+                    let padded = text.padEnd(4,"0");
+                </p>
+                <h4>JavaScript String repeat()</h4>
+                <p>
+                    The repeat() method returns a string with a number of copies of a string. <br>
+                    The repeat() method returns a new string. <br>
+                    The repeat() method does not change the original string. <br>
+                    Examples <br>
+                    Create copies of a text: <br>
+                    let text = "Hello world!"; <br>
+                    let result = text.repeat(2); <br>
+                    let text = "Hello world!"; <br>
+                    let result = text.repeat(4);
+                </p>
+                <h4>Replacing String Content</h4>
+                <p>
+                    The replace() method replaces a specified value with another value in a string: <br>
+                    Example <br>
+                    let text = "Please visit Microsoft!"; <br>
+                    let newText = text.replace("Microsoft", "W3Schools"); <br>
+                    Note <br>
+                    The replace() method does not change the string it is called on. <br>
+                    The replace() method returns a new string. <br>
+                    The replace() method replaces only the first match
+                </p>
+                <h4>JavaScript String ReplaceAll()</h4>
+                <p>
+                    In 2021, JavaScript introduced the string method replaceAll(): <br>
+                    Example <br>
+                    text = text.replaceAll("Cats","Dogs"); <br>
+                    text = text.replaceAll("cats","dogs"); <br>
+                    The replaceAll() method allows you to specify a regular expression instead of a string to be replaced. <br>
+                    If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown. <br>
+                    Example <br>
+                    text = text.replaceAll(/Cats/g,"Dogs"); <br>
+                    text = text.replaceAll(/cats/g,"dogs");
+                </p>
+                <h4>JavaScript String split()</h4>
+                <p>
+                    A string can be converted to an array with the split() method: <br>
+                    Example <br>
+                    text.split(",")    // Split on commas <br>
+                    text.split(" ")    // Split on spaces <br>
+                    text.split("|")    // Split on pipe <br>
+                    If the separator is omitted, the returned array will contain the whole string in index [0]. <br>
+                    If the separator is "", the returned array will be an array of single characters: <br>
+                    Example <br>
+                    text.split("")
+                </p>
+            </div>
+            <!--STRING SEARCH-->
+            <div>
+                <h4>JavaScript String Search</h4>
+                <h4>String Search Methods</h4>
+                <p>
+                    - String indexOf() <br>
+                    - String lastIndexOf() <br>
+                    - String search() <br>
+                    - See Also: <br>
+                    - String match() <br>
+                    - String matchAll() <br>
+                    - String includes() <br>
+                    - String startsWith() <br>
+                    - String endsWith()
+                </p>
+                <h4>JavaScript String indexOf()</h4>
+                <p>
+                    The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found: <br>
+                    Example <br>
+                    let text = "Please locate where 'locate' occurs!"; <br>
+                    let index = text.indexOf("locate"); <br>
+                    Note <br>
+                    JavaScript counts positions from zero. <br>
+                    0 is the first position in a string, 1 is the second, 2 is the third, ...
+                </p>
+                <h4>JavaScript String lastIndexOf()</h4>
+                <p>
+                    The lastIndexOf() method returns the index of the last occurrence of a specified text in a string: <br>
+                    Example <br>
+                    let text = "Please locate where 'locate' occurs!"; <br>
+                    let index = text.lastIndexOf("locate"); <br>
+                    Both indexOf(), and lastIndexOf() return -1 if the text is not found: <br>
+                    Example <br>
+                    let text = "Please locate where 'locate' occurs!"; <br>
+                    let index = text.lastIndexOf("John"); <br>
+                    Both methods accept a second parameter as the starting position for the search: <br>
+                    Example <br>
+                    let text = "Please locate where 'locate' occurs!"; <br>
+                    let index = text.indexOf("locate", 15); <br>
+                    The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string. <br>
+                    Example <br>
+                    let text = "Please locate where 'locate' occurs!"; <br>
+                    text.lastIndexOf("locate", 15);
+                </p>
+                <h4>JavaScript String search()</h4>
+                <p>
+                    The search() method searches a string for a string (or a regular expression) and returns the position of the match: <br>
+                    Examples <br>
+                    let text = "Please locate where 'locate' occurs!"; <br>
+                    text.search("locate"); <br>
+                    let text = "Please locate where 'locate' occurs!"; <b></b>
+                    text.search(/locate/); <br>
+                    Did You Notice? <br>
+                    The two methods, indexOf() and search(), are equal? <br>
+                    They accept the same arguments (parameters), and return the same value? <br>
+                    The two methods are NOT equal. These are the differences: <br>
+                    The search() method cannot take a second start position argument. <br>
+                    The indexOf() method cannot take powerful search values (regular expressions).
+                </p>
+                <h4>JavaScript String match()</h4>
+                <p>
+                    The match() method returns an array containing the results of matching a string against a string (or a regular expression). <br>
+                    Examples <br>
+                    Perform a search for "ain": <br>
+                    let text = "The rain in SPAIN stays mainly in the plain"; <br>
+                    text.match("ain"); <br>
+                    Perform a search for "ain": <br>
+                    let text = "The rain in SPAIN stays mainly in the plain"; <br>
+                    text.match(/ain/); <br>
+                    Perform a global search for "ain": <br>
+                    let text = "The rain in SPAIN stays mainly in the plain"; <br>
+                    text.match(/ain/g); <br>
+                    Perform a global, case-insensitive search for "ain": <br>
+                    let text = "The rain in SPAIN stays mainly in the plain"; <br>
+                    text.match(/ain/gi); <br>
+                    Note <br>
+                    If a regular expression does not include the g modifier (global search), match() will return only the first match in the string.
+                </p>
+                <h4>JavaScript String matchAll()</h4>
+                <p>
+                    The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression). <br>
+                    Example <br>
+                    const iterator = text.matchAll("Cats");  <br>
+                    If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown. <br>
+                    Example <br>
+                    const iterator = text.matchAll(/Cats/g); <br>
+                    If you want to search case insensitive, the insensitive flag (i) must be set: <br>
+                    Example <br>
+                    const iterator = text.matchAll(/Cats/gi); <br>
+                    Notes <br>
+                    matchAll() is an ES2020 feature. <br>
+                    matchAll() does not work in Internet Explorer. 
+                </p>
+                <h4>JavaScript String includes()</h4>
+                <p>
+                    The includes() method returns true if a string contains a specified value. <br>
+                    Otherwise it returns false. <br>
+                    Examples <br>
+                    Check if a string includes "world": <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.includes("world"); <br>
+                    Check if a string includes "world". Start at position 12: <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.includes("world", 12); <br>
+                    Notes  <br>
+                    includes() is case sensitive. <br>
+                    includes() is an ES6 feature. <br>
+                    includes() is not supported in Internet Explorer.
+                </p>
+                <h4>JavaScript String startsWith()</h4>
+                <p>
+                    The startsWith() method returns true if a string begins with a specified value. <br>
+                    Otherwise it returns false: <br>
+                    Examples <br>
+                    Returns true: <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.startsWith("Hello"); <br>
+                    Returns false: <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.startsWith("world") <br>
+                    A start position for the search can be specified: <br>
+                    Returns false: <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.startsWith("world", 5) <br>
+                    Returns true:  <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.startsWith("world", 6) <br>
+                    Notes <br>
+                    startsWith() is case sensitive. <br>
+                    startsWith() is an ES6 feature. <br>
+                    startsWith() is not supported in Internet Explorer.
+                </p>
+                <h4>JavaScript String endsWith()</h4>
+                <p>
+                    The endsWith() method returns true if a string ends with a specified value. <br>
+                    Otherwise it returns false: <br>
+                    Examples <br>
+                    Check if a string ends with "Doe": <br>
+                    let text = "John Doe"; <br>
+                    text.endsWith("Doe"); <br>
+                    Check if the 11 first characters of a string ends with "world": <br>
+                    let text = "Hello world, welcome to the universe."; <br>
+                    text.endsWith("world", 11); <br>
+                    Notes <br>
+                    endsWith() is case sensitive. <br>
+                    endsWith() is an ES6 feature. <br>
+                    endsWith() is not supported in Internet Explorer.
+                </p>
+            </div>
+            <!--STRING TEMPLATES-->
+            <div>
+                <h4>JavaScript Template Strings</h4>
+                <h4>Back-Tics Syntax</h4>
+                <p>
+                    Template Strings use back-ticks (``) rather than the quotes ("") to define a string: <br>
+                    Example <br>
+                    let text = `Hello World!`;                
+                </p>
+                <h4>Quotes Inside Strings</h4>
+                <p>
+                    Template Strings allow both single and double quotes inside a string: <br>
+                    Example <br>
+                    let text = `He's often called "Johnny"`;
+                </p>
+                <h4>Multiline Strings</h4>
+                <p>
+                    Template Strings allow multiline strings: <br>
+                    Example <br>
+                    let text = <br> 
+                    `The quick <br>
+                    brown fox <br>
+                    jumps over <br>
+                    the lazy dog`;
+                </p>
+                <h4>Interpolation</h4>
+                <p>
+                    Template String provide an easy way to interpolate variables and expressions into strings. <br>
+                    The method is called string interpolation. <br>
+                    The syntax is: <br>
+                    ${...}
+                </p>
+                <h4>Variable Substitutions</h4>
+                <p>
+                    Template Strings allow variables in strings: <br>
+                    Example <br>
+                    let firstName = "John"; <br>
+                    let lastName = "Doe"; <br>
+                    let text = `Welcome ${firstName}, ${lastName}!`; <br>
+                </p>
+                <h4>Expression Substitution</h4>
+                <p>
+                    Template Strings allow expressions in strings: <br>
+                    Example <br>
+                    let price = 10; <br>
+                    let VAT = 0.25;  <br>       
+                    let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+                </p>
+                <h4>HTML Templates</h4>
+                <p>
+                    Example <br>
+                    let header = "Template Strings"; <br>
+                    let tags = ["template strings", "javascript", "es6"]; <br>
+                    let html = `&lt;h2&gt;${header}</h2><ul>`; <br>
+                    for (const x of tags) { <br>
+                        html += `&lt;li&gt;${x}&lt;/li&gt;`; <br>
+                    } <br>
+                    html += `&lt;/ul&gt;`;
+                </p>
+            </div>
+            <!--NUMBERS-->
+            <div>
+                <h4>JavaScript Numbers</h4>
+                <p>
+                    JavaScript has only one type of number. Numbers can be written with or without decimals. <br>
+                    Example <br>
+                    let x = 3.14;    // A number with decimals <br>
+                    let y = 3;       // A number without decimals <br>
+                    Extra large or extra small numbers can be written with scientific (exponent) notation: <br>
+                    Example <br>
+                    let x = 123e5;    // 12300000 <br>
+                    let y = 123e-5;   // 0.00123                    
+                </p>
+                <h4>JavaScript Numbers are Always 64-bit Floating Point</h4>
+                <p>
+                    Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc. <br>
+                    JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard. <br>
+                    This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63:
+                </p> <br>
+                <img src="imgs/bitf.png" width="70%">
+                <h4>Integer Precision</h4>
+                <p>
+                    Integers (numbers without a period or exponent notation) are accurate up to 15 digits. <br>
+                    Example <br>
+                    let x = 999999999999999;   // x will be 999999999999999 <br>
+                    let y = 9999999999999999;  // y will be 10000000000000000 <br>
+                    The maximum number of decimals is 17.
+                </p>
+                <h4>Floating Precision</h4>
+                <p>
+                    Floating point arithmetic is not always 100% accurate: <br>
+                    let x = 0.2 + 0.1; <br>
+                    To solve the problem above, it helps to multiply and divide: <br>
+                    let x = (0.2 * 10 + 0.1 * 10) / 10;
+                </p>
+                <h4>Adding Numbers and Strings</h4>
+                <p>
+                    If you add two numbers, the result will be a number: <br>
+                    Example <br>
+                    let x = 10; <br>
+                    let y = 20; <br>
+                    let z = x + y; <br>
+                    If you add two strings, the result will be a string concatenation: <br>
+                    Example <br>
+                    let x = "10"; <br>
+                    let y = "20";  <br>
+                    let z = x + y; <br>
+                    If you add a number and a string, the result will be a string concatenation: <br>
+                    Example <br>
+                    let x = 10; <br>
+                    let y = "20"; <br>
+                    let z = x + y; <br>
+                    If you add a string and a number, the result will be a string concatenation: <br>
+                    Example <br>
+                    let x = "10"; <br>
+                    let y = 20; <br>
+                    let z = x + y; <br>
+                    A common mistake is to expect this result to be 30: <br>
+                    Example <br>
+                    let x = 10; <br>
+                    let y = 20; <br>
+                    let z = "The result is: " + x + y; <br>
+                    A common mistake is to expect this result to be 102030: <br>
+                    Example <br>
+                    let x = 10; <br>
+                    let y = 20; <br>
+                    let z = "30"; <br>
+                    let result = x + y + z; <br>
+                    The JavaScript interpreter works from left to right. <br>
+                    First 10 + 20 is added because x and y are both numbers. <br>
+                    Then 30 + "30" is concatenated because z is a string. <br>
+                </p>
+                <h4>Numeric Strings</h4>
+                <p>
+                    JavaScript strings can have numeric content: <br>
+                    let x = 100;         // x is a number <br>
+                    let y = "100";       // y is a string  <br>
+                    JavaScript will try to convert strings to numbers in all numeric operations: <br>
+                    This will work: <br>
+                    let x = "100"; <br>
+                    let y = "10"; <br>
+                    let z = x / y; <br>
+                    This will also work: <br>
+                    let x = "100"; <br>
+                    let y = "10"; <br>
+                    let z = x * y; <br>
+                    And this will work: <br>
+                    let x = "100"; <br>
+                    let y = "10"; <br>
+                    let z = x - y; <br>
+                    But this will not work: <br>
+                    let x = "100"; <br>
+                    let y = "10"; <br>
+                    let z = x + y; <br>
+                    In the last example JavaScript uses the + operator to concatenate the strings.
+                </p>
+                <h4>NaN - Not a Number</h4>
+                <p>
+                    NaN is a JavaScript reserved word indicating that a number is not a legal number. <br>
+                    Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number): <br>
+                    Example <br>
+                    let x = 100 / "Apple"; <br>
+                    However, if the string is numeric, the result will be a number: <br>
+                    Example <br>
+                    let x = 100 / "10"; <br>
+                    You can use the global JavaScript function isNaN() to find out if a value is a not a number: <br>
+                    Example <br>
+                    let x = 100 / "Apple"; <br>
+                    isNaN(x); <br>
+                    Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN: <br>
+                    Example <br>
+                    let x = NaN; <br>
+                    let y = 5; <br>
+                    let z = x + y; <br>
+                    Or the result might be a concatenation like NaN5: <br>
+                    Example <br>
+                    let x = NaN; <br>
+                    let y = "5"; <br>
+                    let z = x + y; <br>
+                    NaN is a number: typeof NaN returns number: <br>
+                    Example <br>
+                    typeof NaN;
+                </p>
+                <h4>Infinity</h4>
+                <p>
+                    Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number. <br>
+                    Example <br>
+                    let myNumber = 2; <br>
+                    // Execute until Infinity
+                    <br>
+                    while (myNumber != Infinity) { <br>
+                      myNumber = myNumber * myNumber; <br>
+                    } <br>
+                    Division by 0 (zero) also generates Infinity: <br>
+                    Example <br>
+                    let x =  2 / 0; <br>
+                    let y = -2 / 0; <br>
+                    Infinity is a number: typeof Infinity returns number. <br>
+                    Example <br>
+                    typeof Infinity;
+                </p>
+                <h4>Hexadecimal</h4>
+                <p>
+                    JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x. <br>
+                    Example <br>
+                    let x = 0xFF; <br>
+                    Never write a number with a leading zero (like 07). <br>
+                    Some JavaScript versions interpret numbers as octal if they are written with a leading zero. <br>
+                    By default, JavaScript displays numbers as base 10 decimals. <br>
+                    But you can use the toString() method to output numbers from base 2 to base 36. <br>
+                    Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2. <br>
+                    Example <br>
+                    let myNumber = 32; <br>
+                    myNumber.toString(32); <br>
+                    myNumber.toString(16); <br>
+                    myNumber.toString(12); <br>
+                    myNumber.toString(10); <br>
+                    myNumber.toString(8);  <br>
+                    myNumber.toString(2);
+                </p>
+                <h4>JavaScript Numbers as Objects</h4>
+                <p>
+                    Normally JavaScript numbers are primitive values created from literals: <b></b>
+                    let x = 123; <br>
+                    But numbers can also be defined as objects with the keyword new: <br>
+                    let y = new Number(123); <br>
+                    Example <br>
+                    let x = 123; <br>
+                    let y = new Number(123); <br>
+                    Do not create Number objects. <br>
+                    The new keyword complicates the code and slows down execution speed. <br>
+                    Number Objects can produce unexpected results: <br>
+                    When using the == operator, x and y are equal: <br>
+                    let x = 500; <br>
+                    let y = new Number(500); <br>
+                    When using the === operator, x and y are not equal. <br>
+                    let x = 500; <br>
+                    let y = new Number(500); <br>
+                    Note the difference between (x==y) and (x===y). <br>
+                    (x == y) true or false? <br>
+                    let x = new Number(500); <br>
+                    let y = new Number(500); <br>
+                    (x === y) true or false? <br>
+                    let x = new Number(500); <br>
+                    let y = new Number(500);
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/tabs.js"></script>
+</body>
+</html>
